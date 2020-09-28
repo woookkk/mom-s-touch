@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* common.css - 공통 레이아웃 디자인 */
+
+/***************** 헤더 영역 ***********************/
+#header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 5%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#gnb {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 450px;
+}
+
+.gnb_box {
+    width: 100%;
+}
+
+.gnb_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb_box a {
+    color: #fff;
+}
+

@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* main.css - 메인페이지 CSS */
+
+/*파일 merging(합치기)*/
+@import url(../css/reset.css);
+@import url(../css/core.css);
+@import url(../css/common.css);
+
+
+.main_top {
+    position: relative;
+    box-shadow: 0 1px 5px grey;
+}
+
+/************** 헤더 영역 **************/
+#header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 5%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#gnb {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 450px;
+}
+
+.gnb_box {
+    width: 100%;
+}
+
+.gnb_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb_box a {
+    color: #fff;
+}
+
+/************** 배너영역 ***************/
+
+/*배너겉박스*/
+#main_ban {
+    /* position: relative;*/
+    /*부모자격*/
+}
+
+/*배너박스*/
+.main_banslide {
+    position: relative;
+    /*부모자격*/
+    height: 80vmin;
+}
+
+.main_banslide li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*모두 안보이게*/
+    transition: opacity .8s;
+    /*트랜지션*/
+}
+
+.main_banslide li.on {
+    /*class가 "on"인 li*/
+    opacity: 1;
+    z-index: 1;
+    /*맨위로 오게*/
+}
+
+/* 배너 박스 글 */
+.main_ban_box {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.main_ban_text1 {
+    font-size: 2.187rem;
+    color: #C7060E;
+}
+
+.main_ban_text2 {
+    position: relative;
+    padding-top: 3%;
+    font-size: 1.562rem;
+}
+
+.main_ban_text2::after {
+    content: "";
+    position: absolute;
+    right: 210px;
+    width: 85px;
+    height: 3px;
+    bottom: -25px;
+    background-color: #C7060E;
+    z-index: 2;
+}
+
+.main_ban_text3 {
+    padding-top: 7%;
+}
+
+/*배너 각 이미지 넣기*/
+.main_banslide li:first-child {
+    background: url(../images/main_banner1.png) no-repeat center/cover;
+}
+
+.main_banslide li:nth-child(2) {
+    background: url(../images/main_banner2.png) no-repeat center/cover;
+}
+
+.main_banslide li:nth-child(3) {
+    background: url(../images/main_banner4.png) no-repeat center/cover;
+}
+
+/* 블릿 버튼 */
+#slide_btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#slide_btn li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    background: url(../images/btn.png) no-repeat;
+}
+
+#slide_btn li:last-child {
+    margin-right: 0;
+}
+
+#slide_btn li:hover,
+#slide_btn li.on {
+    background-position: 0 -20px;
+}
