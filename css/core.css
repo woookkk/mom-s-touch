@@ -53,6 +53,7 @@ body {
     color: #222;
     line-height: 136%;
     font-size: 1rem;
+    max-width: 1920px;
 }
 
 /* 공통 class */

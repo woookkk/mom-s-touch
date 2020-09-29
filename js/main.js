@@ -17,34 +17,39 @@ $(function () { //////// jQB////////
     var scnt = tg.find("li").length;
     console.log("슬개수:" + scnt);
     //////////////////////////////////////////
-    var goSlide = function (dir) {
+    var goSlide = function (seq, dir) {
 
 
-        //// dir-방향(0-왼쪽,1-오른쪽)
+        //// seq-순번, dir-방향(0-왼쪽,1-오른쪽)
         console.log("이동방향" + dir);
 
         // 오른쪽 전달값이 1이므로 true
-        if (dir) {
+        if (dir === 1) {
 
             //슬라이드 순번 증가
             sno++;
             if (sno === scnt) sno = 0; //한계수(처음으로)
-            chgbtn();
+            
         } /////////if ///////////////
         // 왼쪽 전달값이 0 이므로 false (else로 처리!)
-        else {
+        else if (dir === 0) {
 
             //슬라이드 개수 감소 
             sno--;
             if (sno === -1) sno = scnt - 1; // 한계수 (마지막번호로!)
-            chgbtn();
 
-        } ///////// else //////////////
+        } ///////// else if//////////////
+        else { // 블릿으로 이동 ////
+            sno = seq;
+        } //// 블릿으로 이동 //////////////
 
 
         //해당순번 li에 class="on" 지정하기
         tg.find("li").eq(sno).addClass("on")
             .siblings().removeClass("on");
+
+        // 블릿변경
+        chgbtn();
 
 
     }; ////////////////// goSlide 함수 ////////////////
@@ -61,7 +66,7 @@ $(function () { //////// jQB////////
 
         //4초 간격으로 슬라이드 함수 호출
         autoI = setInterval(function () {
-            goSlide(1);
+            goSlide(-1,1);
         }, 5000); ////// 인터발함수 //////
 
     }; ////////////////// autoCall 함수 ////////////////
@@ -91,21 +96,34 @@ $(function () { //////// jQB////////
     chgbtn();
 
     
-    
+    /// 블릿 클릭시 /////////////////
+    $("#slide_btn li").click(function(){
+        var idx = $(this).index();
+        goSlide(idx,2);
+        // 뒤 전달값은 0,1이 아닌값으로 보낸다!
+        
+        // 자동넘김 지우기
+        clearAuto();
+        
+    });////////// click ///////////////
+
+
     /*///////////////////////////////////
         함수명: chgbtn
         기능: 블릿 현재페이지에 맞게 변경하기
     ///////////////////////////////////////////////*/
     function chgbtn() {
-        
+
         /// 블릿변경하기 - class="on" 주기
         $("#slide_btn li").eq(sno).addClass("on")
             .siblings().removeClass("on");
 
     } ////////////////////////////////////// chgMenu 함수 /////////////////
+    
+    
+    
 
 
 
 
 }) /////////////// jQB /////////////////////////
-

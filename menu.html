@@ -8,16 +8,16 @@
     <title>메뉴</title>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
-    <div class="menu_wrap">
+    <div id="menu_wrap">
         <div class="menu_top">
             <!-- 헤더 영역 -->
             <header id="header">
                 <h1 class="logo">
-                    <a href="#"><img src="images/logo_header.png" alt="헤더로고"></a>
+                    <a href="main.html"><img src="images/logo_header.png" alt="헤더로고"></a>
                 </h1>
                 <!-- gnb 영역 -->
                 <nav id="gnb">
@@ -32,24 +32,79 @@
             <!-- 배너 -->
             <div id="menu_ban">
                 <ul class="menu_ban_list">
-                  <li class="on"><span class="bld">햄버거</span></li>
-                  <li><span class="bld">치킨</span></li>
-                  <li><span class="bld">사이드</span></li>
-                  <li><span class="bld">음료</span></li>
+                    <li class="on"><span class="bld">햄버거</span></li>
+                    <li><span class="bld">치킨</span></li>
+                    <li><span class="bld">사이드</span></li>
+                    <li><span class="bld">음료</span></li>
                 </ul>
             </div>
         </div>
-        <div class="menu_wrap">
-            <ul>
+        <!-- 클릭 메뉴 -->
+        <div id="menu_list_wrap">
+            <ul class="menu_list">
+                <li class="on"><a href="#">
+                        <img src="images/menu_hambur.png">
+                        <h3>Burger</h3>
+                    </a></li>
                 <li><a href="#">
-                    <img src="images/">
-                </a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                        <img src="images/menu_chicken.png">
+                        <h3>Chicken</h3>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/menu_side.png">
+                        <h3>Side</h3>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/menu_drink.png">
+                        <h3>Drink</h3>
+                    </a></li>
             </ul>
         </div>
+        <!-- 버거 메뉴  -->
+        <div id="menu_box">
+            <!--<div class="menu_box_img">
+                <img src="images/burger1.png" class="burger_img" alt="버거">
+                <div class="menu_box_text">
+                    <div>Nashville Hot Chicken Burger</div>
+                    <h3>내슈빌핫치킨버거</h3>
+                </div>
+                <div class="menu_detail">
+                    <span class="close_btn">
+                        <a href="#"><img src="images/close.png" alt="닫기"></a>
+                    </span>
+                    <div class="burger_info">
+                        <h3>내슈빌핫치킨버거</h3>
+                        <div class="bur_eng">Nashville Hot Chicken Burger</div>
+                        <div class="bur_price">single 4,100 &nbsp; set 6,100</div>
+                    </div>
+                    <div class="bur_text">
+                           상큼한 코울슬로와 고소한 화이트치즈에<br>
+                            매콤한 특제 핫치킨소스를 <br>
+                            입힌 통다리살 패티의 버거
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="add_menu">더보기 &nbsp; ＋</div>
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
