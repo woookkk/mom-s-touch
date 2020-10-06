@@ -16,7 +16,7 @@ $(function () { ////////////// jQB /////////////////////
     var addmenu;
 
     // 메뉴 이미지 설명글 셋팅 ! ///
-    var Ebmsg = {
+    var Emtitle = {
         "burger": [
       "Nashville Hot Chicken Burger",
         "Jalapeno Pain Burger",
@@ -35,61 +35,57 @@ $(function () { ////////////// jQB /////////////////////
         "Bulgogi Burger"
     ],
         "chicken": [
-      "222Nashville Hot Chicken Burger",
-        "Ja2222lapeno Pain Burger",
-        "Sal222saiko Burger",
-        "Unb222elievable Burger",
-        "Incr222edible Burger",
-        "Chee222se Bacon Burger",
-        "Deep 222222Cheese Burger",
-        "Fire 222222Burger",
-        "White222222 Garlic Burger",
-        "Delux222222e Bulgogi Burger",
-        "Cyber222222 Burger",
-        "Wheel222222et Burger",
-        "Ham C222222heese Fillet Burger",
-        "Whole222222 Shrimp Burger",
-        "Bulgo222222gi Burger"
+      'Nashville Hattong Bridge',
+      'Soy Sauce Garlic Chicken',
+      'Allulose Chicken',
+      'Steamed Sauce Chicken',
+      'Cheongsam Chicken',
+      'Bulsa Chikin',
+      'Flakes Garlic Chicken',
+      'Onion Cheese Pucci',
+      'Fried Chicken',
+      'Cajun Wing',
+      'Boneless Chicken',
+      'Chicken Gangjeong',
+      'Cajun Gangjeong'
     ],
 
         "side": [
-      "Nashvill33333333333 Hot Chicken Burger",
-        "Jalape33333333333o Pain Burger",
-        "Salsai33333333333o Burger",
-        "Unbeli33333333333vable Burger",
-        "Incred33333333333ble Burger",
-        "Cheese33333333333Bacon Burger",
-        "Deep C33333333333eese Burger",
-        "Fire B33333333333rger",
-        "White 33333333333arlic Burger",
-        "Deluxe33333333333Bulgogi Burger",
-        "Cyber 33333333333urger",
-        "Wheele33333333333 Burger",
-        "Ham Ch33333333333ese Fillet Burger",
-        "Whole 33333333333hrimp Burger",
-        "Bulgog33333333333 Burger"
+        'Coleslaw',
+        'Corn Salad',
+        'Crispy Cream Cheese Ball',
+        'Cheese Stick',
+        'Cajun Seasoned Potatoes',
+        'Cheese Potato',
+        'Onion Cheese Potato',
+        'Egg wrap (2 types)',
+        'Wheel wrap',
+        'Jalapeno nuggets',
+        'Kim Tteokman',
+        'tenter (2 pieces)',
+        'Popcorn dumplings (2 types)',
+        'Popcorn Ball',
+        'Sweet Potato Cheese Ball'
     ],
         "drink": [
-      "Nashville4444444444444Hot Chicken Burger",
-        "Jalapen4444444444444 Pain Burger",
-        "Salsaik4444444444444 Burger",
-        "Unbelie4444444444444able Burger",
-        "Incredi4444444444444le Burger",
-        "Cheese 4444444444444acon Burger",
-        "Deep Ch4444444444444ese Burger",
-        "Fire Bu4444444444444ger",
-        "White G4444444444444rlic Burger",
-        "Deluxe 4444444444444ulgogi Burger",
-        "Cyber B4444444444444rger",
-        "Wheelet4444444444444Burger",
-        "Ham Che4444444444444se Fillet Burger",
-        "Whole S4444444444444rimp Burger",
-        "Bulgogi4444444444444Burger"
+        'Cola',
+        'Hot chocolate',
+        'Lemon Black Tea',
+        'Black tea',
+        'Lemonade',
+        'Green grape ade',
+        'Mangoade',
+        'Peach Ade',
+        'Super Berry Water Juice',
+        'Lemon Tea',
+        'Herb Peach Tea',
+        'Americano',
+        'Orange juice'
     ]
 
     };
 
-    var Bmsg = {
+    var Mtitle = {
         "burger": [
         "내슈빌핫치킨버거",
         "할라피뇨통살버거",
@@ -108,72 +104,71 @@ $(function () { ////////////// jQB /////////////////////
         "불고기버거"
     ],
         "chicken": [
-        "내슈빌222222222치킨버거",
-        "할라피222222222통살버거",
-        "살사리222222222버거",
-        "언빌리222222222블버거",
-        "인크레222222222블버거",
-        "치즈베222222222컨버거",
-        "딥치즈222222222거",
-        "불싸이222222222거",
-        "화이트222222222릭버거",
-        "디럭스222222222고기버거",
-        "싸이버222222222",
-        "휠렛버222222222",
-        "햄치즈222222222렛버거",
-        "통새우222222222거",
-        "불고기222222222거"
+        '내슈빌핫통다리',
+        '간장마늘치킨',
+        '알룰로스치킨',
+        '찜햇닭',
+        '치파오치킨',
+        '불사치킨',
+        '후레이크 갈릭치킨',
+        '어니언치즈뿌치',
+        '후라이드치킨',
+        '케이준윙',
+        '순살치킨',
+        '치킨강정',
+        '케이준강정'
     ],
         "side": [
-        "내슈빌핫3333333치킨버거",
-        "할라피뇨3333333통살버거",
-        "살사리코3333333버거",
-        "언빌리버3333333블버거",
-        "인크레더3333333블버거",
-        "치즈베이3333333컨버거",
-        "딥치즈버3333333거",
-        "불싸이버3333333거",
-        "화이트갈3333333릭버거",
-        "디럭스불3333333고기버거",
-        "싸이버거3333333",
-        "휠렛버거3333333",
-        "햄치즈휠3333333렛버거",
-        "통새우버3333333거",
-        "불고기버3333333거"
+        '코울슬로',
+        '콘샐러드',
+        '바삭크림치즈볼',
+        '치즈스틱',
+        '케이준양념감자',
+        '치즈감자',
+        '어니언치즈감자',
+        '에그랩(2종)',
+        '휠랩',
+        '할라피뇨너겟',
+        '김떡만',
+        '텐터로인(2조각)',
+        '팝콘만두(2종)',
+        '팝콘볼',
+        '고구마치즈볼'
     ],
         "drink": [
-        "내슈빌44444444핫치킨버거",
-        "할라피44444444뇨통살버거",
-        "살사리44444444코버거",
-        "언빌리44444444버블버거",
-        "인크레44444444더블버거",
-        "치즈베44444444이컨버거",
-        "딥치즈44444444버거",
-        "불싸이44444444버거",
-        "화이트44444444갈릭버거",
-        "디럭스44444444불고기버거",
-        "싸이버44444444거",
-        "휠렛버44444444거",
-        "햄치즈44444444휠렛버거",
-        "통새우44444444버거",
-        "불고기44444444버거"
+        '콜라',
+        '핫초코',
+        '레몬홍차',
+        '홍차',
+        '레몬에이드',
+        '청포도에이드',
+        '망고에이드',
+        '복숭아에이드',
+        '슈퍼베리워터주스',
+        '레몬티',
+        '허브복숭아티',
+        '아메리카노',
+        '오렌지쥬스'
     ]
     };
-    var Bursing = {
+    var Mprice = {
         "burger": [
-        "4,500",
-        "5,100",
-        "4,900	",
-        "4,500",
-        "4,000",
-        "3,900",
-        "4,100",
-        "4,000",
-        "3,800",
-        "3,600",
-        "3,900",
-        "2,900",
-        "3,000"
+        "single 4,100 &nbsp; set 6,100",
+        "single 3,900 &nbsp; set 5,900",
+        "single 4,500 &nbsp; set 6,500",
+        "single 5,100 &nbsp; set 7,100",
+        "single 4,900 &nbsp; set 6,900",
+        "single 4,500 &nbsp; set 6,500",
+        "single 4,000 &nbsp; set 6,000",
+        "single 3,900 &nbsp; set 5,900",
+        "single 4,100 &nbsp; set 6,100",
+        "single 4,000 &nbsp; set 6,000",
+        "single 3,800 &nbsp; set 5,800",
+        "single 3,600 &nbsp; set 5,600",
+        "single 3,900 &nbsp; set 5,900",
+        "single 2,900 &nbsp; set 4,900",
+        "single 3,000 &nbsp; set 5,000"
+
     ],
         "chicken": [
         "4,500",
@@ -221,25 +216,58 @@ $(function () { ////////////// jQB /////////////////////
         "3,000"
     ]
     };
-    var Burset = [
-        "6,500",
-        "7,100",
-        "6,900",
-        "6,500",
-        "6,000",
-        "5,900",
-        "6,100",
-        "6,000",
-        "5,800",
-        "5,600",
-        "5,900",
-        "4,900",
-        "5,000"
-    ];
 
-    var burtext = [
-        "상큼한 코울슬로와 고소한 화이트치즈에<br>매콤한 특제 핫치킨소스를 <br>입힌 통다리살 패티의 버거",
-    ];
+    var Mtext = {
+
+        "burger": [
+             '상큼한 코울슬로와 고소한 화이트치즈에<br>매콤한 특제 핫치킨소스를 <br>입힌 통다리살 패티의 버거'
+    ],
+        "chicken": [
+        "4,500",
+        "5,100",
+        "4,900	",
+        "4,500",
+        "4,000",
+        "3,900",
+        "4,100",
+        "4,000",
+        "3,800",
+        "3,600",
+        "3,900",
+        "2,900",
+        "3,000"
+    ],
+        "side": [
+        "4,500",
+        "5,100",
+        "4,900	",
+        "4,500",
+        "4,000",
+        "3,900",
+        "4,100",
+        "4,000",
+        "3,800",
+        "3,600",
+        "3,900",
+        "2,900",
+        "3,000"
+    ],
+        "drink": [
+        "4,500",
+        "5,100",
+        "4,900	",
+        "4,500",
+        "4,000",
+        "3,900",
+        "4,100",
+        "4,000",
+        "3,800",
+        "3,600",
+        "3,900",
+        "2,900",
+        "3,000"
+    ]
+    };
 
 
     /*////////////////////////////////
@@ -255,30 +283,36 @@ $(function () { ////////////// jQB /////////////////////
         for (var i = fno; i < lno; i++) {
             $("#menu_box").append(
                 '<div class="menu_box_img">' +
-                '<img src="images/' + menu + (i + 1) + '.png" class="burger_img" alt="버거">' +
+                '<div class="menu_click_box">' +
+                '<img src="images/' + menu + (i + 1) + '.png" class="burger_img" alt="메뉴이미지">' +
                 '<div class="menu_box_text">' +
-                '<div>' + Ebmsg[seq][i] + '</div>' +
-                '<h3>' + Bmsg[seq][i] + '</h3>' +
+                '<div>' + Emtitle[seq][i] + '</div>' +
+                '<h3>' + Mtitle[seq][i] + '</h3>' +
+                '</div>' +
                 '</div>' +
                 '<div class="menu_detail">' +
                 '<span class="close_btn">' +
                 '<img src="images/close.png" alt="닫기">' +
                 '</span>' +
-                '<div class="burger_info">' +
-                '<h3>' + Bmsg[seq][i] + '</h3>' +
-                '<div class="bur_eng">' + Ebmsg[seq][i] + '</div>' +
-                ' <div class="bur_price">single' + Bursing[i] + '&nbsp;set' + Burset[i] + '</div>' +
+                '<div class="menu_info">' +
+                '<h3>' + Mtitle[seq][i] + '</h3>' +
+                '<div class="menu_eng">' + Emtitle[seq][i] + '</div>' +
+                '<div class="menu_price">' + Mprice[seq][i] + '</div>' +
                 '</div>' +
-                '<div class="bur_text">' + burtext[i] + '</div>' +
+                '<div class="menu_info_text">' +
+                '<span>' + Mtext[seq][i] + '</span>' +
+                '</div>' +
+                '</div>' +
+
                 '</div>'
             );
 
         } /////////////// for //////////////
 
 
-
     }; /////// bset 함수 ////////////
     //////////////////////////////////
+
 
     var menu = "burger";
 
@@ -286,8 +320,27 @@ $(function () { ////////////// jQB /////////////////////
     bset(0, 8, menu);
 
 
+    // 한계수 셋팅
+    var limit = {
+        "burger": 15,
+        "chicken": 13,
+        "side": 15,
+        "drink": 13
+    };
+
+    $(".menu_click_box").click(function () {
+        $(this).next().show();
+    }); ////////// click /////////////
+
+    $(".close_btn").click(function () {
+        $(this).parent().hide();
+    }); ////////// click ///////
+
+
+
+
     $(".add_menu").click(function () {
-        bset(8, 15, menu);
+        bset(8, limit[menu], menu);
         $(this).hide();
     }); ///////////////// click /////////////
 

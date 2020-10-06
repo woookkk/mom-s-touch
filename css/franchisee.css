@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+/* franchisee.css - 가맹문의페이지 CSS */
+
+@import url(main.css);
+
+
+body {
+    background-color: #FFFCF6;
+}
+
+.gnb_box a {
+    color: #000;
+}
+
+
+/****************헤더 배너 영역 ****************/
+.franchisee_banner_box {
+    background: url(../images/franchisee_banner.png) no-repeat center/cover;
+    box-shadow: 0 1px 5px grey;
+    height: 80vmin;
+    margin: 5% 0 10%;
+    text-align: center;
+}
+
+.franchisee_banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+}
+
+.franchisee_banner_text h2 {
+    font-size: 2rem;
+    padding-bottom: 7%;
+    text-shadow: 0px 3px 5px #333;
+}
+
+.franchisee_banner_text > div {
+    line-height: 1.5;
+    color: #cbcbcb;
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+}
+
+.franchisee_menu_list {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 80vmin;
+    border: 1px solid #fff;
+}
+
+.franchisee_menu_list li {
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #fff;
+}
+
+.franchisee_menu_list li:last-child {
+    border-right: none;
+}
+
+.franchisee_menu_list a {
+    color: #fff;
+    display: block;
+    width: 20vmin;
+}
+
+.franchisee_menu_list a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all .3s ease-in;
+}
+
+
+.success_wrap, .condition_wrap{
+    width: 1224px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.success_title>h3, .condition_title>h3{
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.success_guid, .condition_guid {
+    float: right;
+    font-size: 1rem;
+}
+
+.success_guid_img>img, .condition_guid_img>img{
+    display: block;
+    padding: 10% 0 1%;
+
+}
+
+/*************  성공요인 ***************/
+
+.success_box{
+    width: 100%;
+    height: auto;
+}
+
+
+/* 성공요인 1*/
+.success_area_1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec1_text_box {
+    padding-top: 15%;
+    text-align: right;
+}
+
+.success_area_1 > img {
+    margin: 15% 0 0 5%;
+/*    box-shadow: 0 1px 5px grey;*/
+    opacity: .9;
+    width: 600px;
+}
+.sec1_img_back{
+    position: absolute;
+    width: 380px;
+    height: 550px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    z-index: -1;
+    top: 18%;
+}
+.sec1_text1 {
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.sec1_text2 {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-bottom: 10%;
+}
+
+.sec1_text3 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* 성공요인 2*/
+.success_area_2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.success_area_2 > img {
+    width: 566px;
+    box-shadow: 0 1px 5px grey;
+    margin-top: 10%;
+    opacity: .9;
+}
+
+.sec2_text_box {
+    padding-top: 20%;
+    text-align: right;
+    margin-right: 4.7%;
+}
+
+.sec2_text1,
+.sec3_text3 {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 5%;
+}
+
+.sec2_text2,
+.sec3_text2 {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-bottom: 5%;
+}
+
+.sec2_text_box p {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-bottom: 5%;
+}
+
+/* 성공요인 3*/
+.success_area_3 {
+    overflow: hidden;
+    margin-top: -3%;
+}
+
+.sec3_text_inbox1 {
+    text-align: right;
+    padding-top: 8%;
+}
+
+.success_area_3 > img {
+    float: left;
+    width: 600px;
+    box-shadow: 0 1px 5px grey;
+}
+
+.sec3_text_inbox2 {
+    float: left;
+    padding: 6% 0 0 5%;
+}
+
+.sec3_text1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-bottom: 2%;
+}
+.sec3_text4{
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* 성공요인 4 */
+.success_area_4 {
+    margin-top: 7%;
+    position: relative;
+}
+
+.sec3_img>img{
+    width: 100%;
+    float: right;
+    width: 700px;
+    box-shadow: 0 1px 5px grey;
+}
+
+.go_btn {
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #333;
+    width: 250px;
+    height: 50px;
+    top: 50%;
+    left: 10%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 1px 5px #333;
+}
+.go_btn a{
+    display: block;
+    color: #fff;
+}
+
+/***************** 개설 조건 ******************/
+.condition_wrap{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+

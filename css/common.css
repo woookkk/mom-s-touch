@@ -5,6 +5,7 @@
 #header {
     display: flex;
     position: absolute;
+    top: 0;
     width: 100%;
     z-index: 99;
 }
@@ -38,3 +39,9 @@
     color: #fff;
 }
 
+.clear_both::before,
+.clear_both::after {
+    content: "";
+    clear: both;
+    display: block;
+}
