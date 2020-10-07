@@ -78,31 +78,9 @@ body {
     transition: all .3s ease-in;
 }
 
-
-.success_wrap, .condition_wrap{
-    width: 1224px;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-.success_title>h3, .condition_title>h3{
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-.success_guid, .condition_guid {
-    float: right;
-    font-size: 1rem;
-}
-
-.success_guid_img>img, .condition_guid_img>img{
-    display: block;
-    padding: 10% 0 1%;
-
-}
-
 /*************  성공요인 ***************/
 
-.success_box{
+.success_box {
     width: 100%;
     height: auto;
 }
@@ -122,11 +100,12 @@ body {
 
 .success_area_1 > img {
     margin: 15% 0 0 5%;
-/*    box-shadow: 0 1px 5px grey;*/
+    /*    box-shadow: 0 1px 5px grey;*/
     opacity: .9;
     width: 600px;
 }
-.sec1_img_back{
+
+.sec1_img_back {
     position: absolute;
     width: 380px;
     height: 550px;
@@ -135,6 +114,7 @@ body {
     z-index: -1;
     top: 18%;
 }
+
 .sec1_text1 {
     font-size: 2rem;
     padding-bottom: 5%;
@@ -217,7 +197,8 @@ body {
     line-height: 1.3;
     padding-bottom: 2%;
 }
-.sec3_text4{
+
+.sec3_text4 {
     font-size: 1rem;
     line-height: 1.7;
 }
@@ -228,7 +209,7 @@ body {
     position: relative;
 }
 
-.sec3_img>img{
+.sec3_img > img {
     width: 100%;
     float: right;
     width: 700px;
@@ -247,15 +228,136 @@ body {
     line-height: 50px;
     box-shadow: 0 1px 5px #333;
 }
-.go_btn a{
+
+.go_btn a {
     display: block;
     color: #fff;
 }
 
 /***************** 개설 조건 ******************/
-.condition_wrap{
+.condition_wrap {
     margin-top: 10%;
 }
+
+.condition_main_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15% 0 10%;
+}
+
+.condition_main_title h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.condition_list_area {
+    position: relative;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 40vmin;
+}
+
+.condition_list_box {
+    display: flex;
+    position: absolute;
+    width: 70rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+.condition_list_box > li {
+    display: flex;
+    width: 40rem;
+}
+
+.condition_list_box > li img {
+    width: 150px;
+    height: 150px;
+    margin: 10% 15% 0 0;
+}
+
+.condition_list_title {
+    font-size: 1.562rem;
+    color: #C7060E;
+    padding-bottom: 5%;
+}
+
+.condition_list {
+    line-height: 2;
+}
+
+/***************** 개설 절차******************/
+
+.step_wrap {
+    margin: 10% 0;
+}
+
+.step_main_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15% 0 10%;
+}
+
+.step_main_title h2 {
+    display: inline-block;
+    position: relative;
+}
+
+/* 개설절차 리스트 */
+.step_list_wrap {
+    width: 1640px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.step_img{
+    position: relative;
+}
+.step_img>img{
+    width: 100%;
+}
+.step_list_box {
+    width: 21%;
+    margin-bottom: 5.3%;
+    background-color: #fff;
+    box-shadow: -4px 5px 15px 4px rgba(235, 235, 235, 0.45);
+}
+.step_list_num{
+    position: absolute;
+    width: 50px;
+    bottom: -19px;
+    left: 6%;
+    height: 50px;
+    background-color: rgba(199, 6, 14, 0.6);
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.step_list_text{
+    margin-top:10%;
+    padding-left: 5%;
+}
+.step_list_text li{
+    line-height: 2;
+}
+.step_text_title{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
