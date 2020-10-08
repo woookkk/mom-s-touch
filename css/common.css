@@ -45,3 +45,31 @@
     clear: both;
     display: block;
 }
+
+table, thead, tbody, tr, th, td{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

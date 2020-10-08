@@ -306,28 +306,39 @@ body {
 }
 
 /* 개설절차 리스트 */
-.step_list_wrap {
+.step_list_wrap1 {
     width: 1640px;
     margin: 0 auto;
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    
 }
-.step_img{
+
+.step_list_wrap2 {
+    width: 1640px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.step_img {
     position: relative;
 }
-.step_img>img{
+
+.step_img > img {
     width: 100%;
 }
+
 .step_list_box {
     width: 21%;
     margin-bottom: 5.3%;
     background-color: #fff;
     box-shadow: -4px 5px 15px 4px rgba(235, 235, 235, 0.45);
 }
-.step_list_num{
+
+.step_list_num {
     position: absolute;
     width: 50px;
     bottom: -19px;
@@ -339,26 +350,115 @@ body {
     text-align: center;
     color: #fff;
 }
-.step_list_text{
-    margin-top:10%;
+
+.step_list_text {
+    margin-top: 10%;
     padding-left: 5%;
 }
-.step_list_text li{
+
+.step_list_text li {
     line-height: 2;
 }
-.step_text_title{
+
+.step_text_title {
     font-size: 1.3rem;
 }
 
+.step_list_wrap1 > .step_list_box:not(:last-child) .step_img::after {
+    content: url(../images/step_arrow.png);
+    position: absolute;
+    top: 90%;
+    right: -17%;
+}
 
+.step_list_wrap2 > .step_list_box .step_img::after {
+    content: url(../images/step_arrow.png);
+    position: absolute;
+    top: 90%;
+    right: -17%;
+    transform: rotate(180deg);
+}
 
+.step_list_wrap2 > .step_list_box:first-child .step_img::after {
+    display: none;
+}
 
+.step_list_wrap1 > .step_list_box:last-child {
+    position: relative;
+}
 
+.step_list_wrap1 > .step_list_box:last-child::after {
+    content: url(../images/step_arrow.png);
+    position: absolute;
+    transform: translatex(-50%) rotate(90deg);
+    left: 50%;
+    bottom: -13%;
+}
 
+/*********** 투자비용 *************/
 
+.cost_main_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15% 0 10%;
+}
 
+.cost_main_title h2 {
+    display: inline-block;
+    position: relative;
+}
+.cost_list_top{
+    text-align: right;
+    color: #8b8b8b;
+    font-size: .9rem;
+}
 
+table {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+    text-align: center;
+    margin:1% 0 2% 0;
+}
 
+table tr th{
+    font-weight: bold;
+    border-top: 3px solid #C7060E;
+    border-bottom: 1px solid #C7060E;
+    height: auto;
+    vertical-align: middle;
+    line-height: 3;
+    font-size: 1.3rem;
+}
+table tr td{
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 3;
+    height: auto;
+}
+.cost_list_text span{
+    color: #C7060E;
+}
+.cost_list_text{
+    color: #8b8b8b;
+    font-size: .9rem;
+}
+
+/* 상담바로가기 버튼 */
+.cost_go_btn a{
+     color: #fff;
+    display: block;
+}
+
+.cost_go_btn{
+    background-color: #333;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+/*    box-shadow: 0 1px 5px #333;*/
+    margin-top: 5%;
+    
+}
 
 
 
