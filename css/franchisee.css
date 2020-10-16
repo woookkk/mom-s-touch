@@ -4,15 +4,27 @@
 
 @import url(main.css);
 
+/*
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+*/
 
 body {
     background-color: #FFFCF6;
 }
 
-.gnb_box a {
+.gnb_box > li a {
     color: #000;
 }
 
+/*
+.franchisee_wrap {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}*/
 
 /****************헤더 배너 영역 ****************/
 .franchisee_banner_box {
@@ -45,6 +57,18 @@ body {
     margin-bottom: 10%;
 }
 
+/* 이동 메뉴 */
+
+.franchisee_menu_list {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 80vmin;
+}
+
 .franchisee_menu_list {
     position: absolute;
     bottom: 25%;
@@ -72,13 +96,14 @@ body {
     width: 20vmin;
 }
 
-.franchisee_menu_list a:hover {
-    background-color: #fff;
-    color: #000;
-    transition: all .3s ease-in;
-}
+
 
 /*************  성공요인 ***************/
+
+
+.success_title {
+    margin-bottom: 5%;
+}
 
 .success_box {
     width: 100%;
@@ -98,11 +123,13 @@ body {
     text-align: right;
 }
 
-.success_area_1 > img {
+.success_img1 {
     margin: 15% 0 0 5%;
+}
+
+.success_img1 > img {
     /*    box-shadow: 0 1px 5px grey;*/
     opacity: .9;
-    width: 600px;
 }
 
 .sec1_img_back {
@@ -137,10 +164,12 @@ body {
     justify-content: flex-end;
 }
 
-.success_area_2 > img {
-    width: 566px;
-    box-shadow: 0 1px 5px grey;
+.success_img2 {
     margin-top: 10%;
+}
+
+.csuccess_img2 > img {
+    box-shadow: 0 1px 5px grey;
     opacity: .9;
 }
 
@@ -181,7 +210,7 @@ body {
     padding-top: 8%;
 }
 
-.success_area_3 > img {
+.success_img3 > img {
     float: left;
     width: 600px;
     box-shadow: 0 1px 5px grey;
@@ -242,7 +271,7 @@ body {
 .condition_main_title {
     font-size: 2rem;
     text-align: center;
-    margin: 15% 0 10%;
+    margin: 10% 0 10%;
 }
 
 .condition_main_title h2 {
@@ -407,7 +436,8 @@ body {
     display: inline-block;
     position: relative;
 }
-.cost_list_top{
+
+.cost_list_top {
     text-align: right;
     color: #8b8b8b;
     font-size: .9rem;
@@ -418,10 +448,10 @@ table {
     padding: 0;
     border-spacing: 0;
     text-align: center;
-    margin:1% 0 2% 0;
+    margin: 1% 0 2% 0;
 }
 
-table tr th{
+table tr th {
     font-weight: bold;
     border-top: 3px solid #C7060E;
     border-bottom: 1px solid #C7060E;
@@ -430,42 +460,61 @@ table tr th{
     line-height: 3;
     font-size: 1.3rem;
 }
-table tr td{
+
+table tr td {
     border-bottom: 1px solid #f0f0f0;
     line-height: 3;
     height: auto;
 }
-.cost_list_text span{
+
+.cost_list_text span {
     color: #C7060E;
 }
-.cost_list_text{
+
+.cost_list_text {
     color: #8b8b8b;
     font-size: .9rem;
 }
 
 /* 상담바로가기 버튼 */
-.cost_go_btn a{
-     color: #fff;
+.cost_go_btn a {
+    color: #fff;
     display: block;
 }
 
-.cost_go_btn{
+.cost_go_btn {
     background-color: #333;
     width: 250px;
-    height: 40px;
+    height: 50px;
     text-align: center;
-    line-height: 40px;
-/*    box-shadow: 0 1px 5px #333;*/
-    margin-top: 5%;
-    
+    line-height: 50px;
+    /* box-shadow: 0 1px 5px #333; */
+    margin: 5% auto;
+
 }
 
 
+/*********** 탑버튼 ***************/
+.topbtn {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 4px grey;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
 
+.top_btn_box {
+    display: flex;
+    margin: 15px 5px;
+}
 
-
-
-
-
-
-
+.top_btn_box > span {
+    padding-top: 18px;
+    font-size: 1.3rem;
+    color: #C7060E;
+}

@@ -6,6 +6,10 @@
 @import url(../css/reset.css);
 @import url(../css/core.css);
 @import url(../css/common.css);
+@import url(../css/normalize.css);
+@import url(../css/typed.css);
+@import url(../css/aos.css);
+@import url(../css/media.css);
 
 
 .main_top {
@@ -14,7 +18,7 @@
 }
 
 /************** 헤더 영역 **************/
-#header {
+/*#header {
     display: flex;
     position: absolute;
     width: 100%;
@@ -48,7 +52,7 @@
 
 .gnb_box a {
     color: #fff;
-}
+}*/
 
 /************** 배너영역 ***************/
 
@@ -88,40 +92,43 @@
     z-index: 2;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
 }
 
 .main_ban_text1 {
+    font-family: 'Montserrat-SemiBoldItalic';
     font-size: 3rem;
     color: #C7060E;
-    text-shadow: 0 0 2px #742d2d;
+/*    text-shadow: 0 0 3px #ffeb00;*/
+    text-shadow: 0 0 2px #fff;
 }
 
 .main_ban_text2 {
     position: relative;
-    padding-top: 5%;
     font-size: 2rem;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 0 0 4px #000;
 }
 
 .main_ban_text2::after {
     content: "";
-    position: absolute;    
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 85px;
     height: 3px;
-    bottom: -70%;
+    bottom: -140%;
     background-color: #C7060E;
     z-index: 2;
 }
 
 .main_ban_text3 {
-    padding-top: 10%;
+    padding-top: 5%;
+    line-height: 1.5;
     font-size: 1.125rem;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 0 0 3px #000;
 }
 
 /*배너 각 이미지 넣기*/
@@ -163,4 +170,62 @@
 #slide_btn li:hover,
 #slide_btn li.on {
     background-position: 0 -20px;
+}
+
+/* 검색창 */
+.search_wrap {
+    position: relative;
+    width: 100%;
+    height: 20vmin;
+}
+
+.search_box {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #C7060E;
+    border-radius: 30px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.search_box:hover {
+    box-shadow: 0px 0px .5px 1px #C7060E;
+    width: 20%;
+}
+
+.search_btn {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    color: #C7060E;
+}
+
+.search_txt {
+    display: flex;
+    padding: 0;
+    width: 0px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.search_box:hover > .search_txt {
+    width: 240px;
+    padding: 0 6px;
 }

@@ -189,23 +189,52 @@ body{
     }
 }
 
+/* 더보기 */
 .add_menu {
-    border: 1px solid #000;
-    width: 250px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: #fff;
-    line-height: 50px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5%;
+    position: relative;
     color: #000;
+    text-align: center;
     cursor: pointer;
-    
+    padding: 5% 0;
+}
+.add_menu span{
+	color: rgba(0,0,0,0.5);
+	font-weight: 700;
+	text-shadow: none;
+    padding: 6px 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* Effect 12: circle */
+.add_menu span::before,
+.add_menu span::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 110px;
+	height: 110px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+	transform: translateX(-50%) translateY(-50%) scale(0.2);
 }
 
-.add_menu:hover {
-    color: #C7060E;
+.add_menu span::after {
+	width: 90px;
+	height: 90px;
+	border-width: 6px;
+	transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.add_menu span:hover::before,
+.add_menu span:hover::after,
+.add_menu span:focus::before,
+.add_menu span:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(1);
+	transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 /* 메뉴 클릭시 상세 내용 */

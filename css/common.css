@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* common.css - 공통 레이아웃 디자인 */
 
+
+
+
+
+
 /***************** 헤더 영역 ***********************/
 #header {
     display: flex;
@@ -13,6 +18,7 @@
 .logo {
     width: 200px;
     margin-left: 5%;
+    margin-top: -0%;
 }
 
 .logo img {
@@ -21,7 +27,7 @@
 
 #gnb {
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 5%;
     width: 450px;
 }
@@ -35,41 +41,125 @@
     justify-content: space-around;
 }
 
-.gnb_box a {
+.gnb_box > li a {
     color: #fff;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.clear_both::before,
-.clear_both::after {
-    content: "";
-    clear: both;
+.gnb_box > li a span {
+    font-family: 'NanumSquareR';
+    position: relative;
+    font-size: 1.2rem;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.gnb_box > li a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: bold;
+    color: #C7060E;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.gnb_box > li a:hover span,
+.gnb_box > li a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/*************** 햄버거 메뉴 **************/
+
+.hammenu,
+.hammenu span {
+    display: inline-block;
+    transition: all .4s;
+}
+
+.hammenu {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    top: 10%;
+    right: 5%;
+    display: none;
+}
+
+.hammenu span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.hammenu span:nth-of-type(1) {
+    top: 0;
+}
+
+.hammenu span:nth-of-type(2) {
+    top: 15px;
+}
+
+.hammenu span:nth-of-type(3) {
+    bottom: 0;
+}
+.hammenu.active {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.hammenu.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+}
+
+.hammenu.active span:nth-of-type(2) {
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+}
+
+.hammenu.active span:nth-of-type(3) {
+    opacity: 0;
+}
+
+/****** article 공통 class *******/
+.com_wrap {
+    width: 1224px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.com_title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.com_guid {
+    float: right;
+    font-size: 1rem;
+}
+
+.com_guid_img {
     display: block;
+    padding: 10% 0 1%;
 }
 
-table, thead, tbody, tr, th, td{
-    margin: 0;
-    padding: 0;
-    border: 0;
+.red_circle h2::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -22px;
+    right: -17px;
+    border-radius: 50%;
+    background-color: rgba(199, 6, 14, 0.35);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

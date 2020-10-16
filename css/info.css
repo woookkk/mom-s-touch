@@ -6,21 +6,22 @@
 
 
 
-
 body {
     background-color: #FFFCF6;
 }
 
-.gnb_box a {
+.gnb_box > li a {
     color: #000;
 }
+
+.info_wrap {}
 
 /************ 배너영역*********************/
 #info_ban {
     /*position: absolute;*/
     margin-top: 5%;
     width: 100%;
-    height: 83vmin;
+    height: 60vmin;
     background: url(../images/info_banner2.png) no-repeat center/cover;
     background-attachment: fixed;
     box-shadow: 0 1px 5px grey;
@@ -32,6 +33,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-top: -5%;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -47,9 +49,8 @@ body {
 /****************** 인사말 ******************/
 
 .info_greetings_text {
-    padding-top: 13%;
+    padding-top: 7%;
     text-align: center;
-
 }
 
 .info_greetings_text h3 {
@@ -64,42 +65,165 @@ body {
 }
 
 .greetings_text2 {
+    height: 40px;
     line-height: 1.7;
 }
 
 /* 사이트 이동 버튼 */
 .go_btn {
-    width: 250px;
+    position: relative;
+    width: 200px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid #000;
-/*    border-radius: 50px;*/
     text-align: center;
-    margin: 10% auto;
+    transition: .2s;
+    margin: 5% auto;
+}
+
+.go_btn::before,
+.go_btn::after,
+.go_btn a::before,
+.go_btn a::after {
+    content: '';
+    position: absolute;
+    background-color: #222;
+}
+
+.go_btn::before {
+    width: 0;
+    height: 1px;
+    left: 0;
+    top: 0;
+}
+
+.go_btn:hover::before {
+    animation: line1 .5s both;
+}
+
+.go_btn::after {
+    height: 0;
+    width: 1px;
+    left: 0;
+    top: 0;
+}
+
+.go_btn:hover::after {
+    animation: line2 .5s both;
+}
+
+.go_btn a::before {
+    width: 1px;
+    height: 0;
+    right: 0;
+    top: 0;
+}
+
+.go_btn:hover a::before {
+    animation: line2 .5s .2s both;
+}
+
+.go_btn a::after {
+    height: 1px;
+    width: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.go_btn:hover a::after {
+    animation: line1 .5s .2s both;
+}
+
+@keyframes line1 {
+    0% {
+        left: 0;
+        width: 0;
+    }
+
+    49% {
+        left: 0;
+        width: 100%;
+    }
+
+    50% {
+        left: inherit;
+        right: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: inherit;
+        right: 0;
+        width: 0;
+    }
+}
+
+@keyframes line2 {
+    0% {
+        top: 0;
+        height: 0;
+    }
+
+    49% {
+        top: 0;
+        height: 100%;
+    }
+
+    50% {
+        top: inherit;
+        bottom: 0;
+        height: 100%;
+    }
+
+    100% {
+        top: inherit;
+        bottom: 0;
+        height: 0;
+    }
 }
 
 .go_btn a {
     display: block;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    transition: .3s;
+    font-size: 1.1rem;
 }
 
+.go_btn:hover {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+/* ********** 아이콘 회사 소개 영역 ************/
 .info_icon_box {
     position: relative;
     background: url(../images/info_banner3.png) no-repeat center/cover;
     height: 40vmin;
     box-shadow: 0 1px 5px grey;
+    overflow: hidden;
 }
+
 
 .info_icon_list {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 80%);
     display: flex;
     justify-content: space-around;
     color: #fff;
     text-align: center;
-    vertical-align:
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+}
+
+.info_icon_list.active {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition-delay: 0.3s;
+    transition: all 1.2s ease-in-out;
 }
 
 .info_icon_list > li img {
@@ -118,7 +242,7 @@ body {
 
 .info_icon_list li {
     width: 33%;
-    border-right: 2px solid rgba(245, 245, 245, 0.3);
+    border-right: 1px solid rgba(245, 245, 245, 0.3);
 }
 
 .info_icon_list li:last-child {
@@ -126,6 +250,10 @@ body {
 }
 
 /******** 회사 지도 ***********/
+.info_map_wrap {
+    position: relative;
+}
+
 .info_map_tit {
     margin-top: 10%;
     text-align: center;
@@ -149,7 +277,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 900px;
-    height: 400px;
+    height: 500px;
     border: 1px solid #f8f8f8;
     padding: 5%;
     margin: 5% 0 10% 10%;
@@ -163,19 +291,58 @@ body {
 }*/
 .info_map_text > li img {
     float: left;
-    padding-right: 5%;
+    padding: 1% 5% 0 0;
 }
 
-.info_map_text1 {
-    padding-left: 8px;
+/* 지도 뷰 */
+.info_map_view {
+    position: absolute;
+    top: 30%;
+    right: 20%;
 }
 
 
 /*************** 푸터 영역 ********************/
-footer{
-    background-color: #d7d7d7;
+footer {
+    background-color: #222;
     height: 20vmin;
 }
+.footer_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_text a{
+    color: #fff;
+}
+.footer_text h3{
+    color: #fff;
+    font-family: 'QuestaSans';
+    padding-bottom: 5%;
+}
+.footer_text>div{
+    font-size: .7rem;
+    line-height: 2;
+    color: #fff;
+}
+.footer_sns a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
