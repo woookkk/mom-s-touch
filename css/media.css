@@ -6,7 +6,14 @@
     }
 
     #menu_list_wrap {
+        top: 28%;
         width: 52%;
+    }
+    
+    
+    /*********  info page  *************/
+    .info_map_view {
+    width: 520px;
     }
 
 }
@@ -21,7 +28,10 @@
     #menu_list_wrap {
         width: 53%;
     }
-
+    /*********  info page  *************/
+    .info_map_view {
+    width: 520px;
+    }
 }
 
 

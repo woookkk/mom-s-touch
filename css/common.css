@@ -42,7 +42,7 @@
 }
 
 .gnb_box > li a {
-    color: #fff;
+    color: #222;
     overflow: hidden;
     display: inline-block;
 }
@@ -162,4 +162,54 @@
     right: -17px;
     border-radius: 50%;
     background-color: rgba(199, 6, 14, 0.35);
+}
+
+
+/*************** 푸터 영역 ********************/
+footer {
+    background-color: #222;
+    height: 30vmin;
+}
+
+.footer_wrap {
+    padding: 4% 0;
+    text-align: center;
+}
+
+.footer_text a {
+    color: #fff;
+}
+
+.footer_text h3 {
+    color: #fff;
+    font-family: 'QuestaSans';
+    padding-bottom: 20px;
+}
+
+.footer_text > div {
+    font-size: .7rem;
+    line-height: 2;
+    color: #fff;
+
+}
+
+.footer_text2 {
+    padding-bottom: 15px;
+}
+
+.footer_sns a {
+    color: #fff;
+}
+
+.footer_sns {
+    display: flex;
+    width: 15%;
+    position: absolute;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer_sns img {
+    width: 25px;
 }

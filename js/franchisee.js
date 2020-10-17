@@ -2,7 +2,7 @@ $(function () { ////////////// jQB /////////////////////
     console.log("로딩완료!");
 
     //부드러운 스크롤 
-    //$(".franchisee_wrap").smoothWheel();
+    //$("#franchisee_wrap").smoothWheel();
 
     /* 스크롤 */
     AOS.init();
@@ -124,9 +124,42 @@ $(function () { ////////////// jQB /////////////////////
         }); /// animate /////
 
     }); ////////// click ///////////
+    
+    
+/*
+
+    var infotop = $(".success_box").offset().top;
+    //////// 스크롤 이벤트 설정하기 //////////
+    $(window).scroll(function () {
+        //현재 window의 스크롤바 위치(세로 스크롤)
+        var cTop = $(this).scrollTop();
+        console.log("현재스크롤바위치: " + cTop);
+        console.log(infotop);
+
+        if (cTop > infotop - 1000 && cTop < infotop) {
+            $(".success_img1").addClass("active");
+        } else {
+
+            $(".success_img1").removeClass("active");
+        };
+        
+        if (cTop > infotop + 80 && cTop < infotop + 1000) {
+            $(".success_img2").addClass("active2");
+        } else {
+
+            $(".success_img2").removeClass("active2");
+        };
+        
+        if (cTop > infotop + 100 && cTop < infotop + 1200) {
+            $(".sec3_img").addClass("active4");
+        } else {
+
+            $(".sec3_img").removeClass("active4");
+        }
+    }); ////////////// scroll ////////////////
 
 
-
+*/
 
 
 

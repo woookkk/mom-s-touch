@@ -14,7 +14,6 @@ body {
     color: #000;
 }
 
-.info_wrap {}
 
 /************ 배너영역*********************/
 #info_ban {
@@ -297,6 +296,7 @@ body {
 /* 지도 뷰 */
 .info_map_view {
     position: absolute;
+    width: 700px;
     top: 30%;
     right: 20%;
 }
@@ -305,53 +305,48 @@ body {
 /*************** 푸터 영역 ********************/
 footer {
     background-color: #222;
-    height: 20vmin;
+    height: 30vmin;
 }
-.footer_wrap{
-    display: flex;
-    justify-content: space-around;
+
+.footer_wrap {
+    padding: 4% 0;
+    text-align: center;
 }
-.footer_text a{
+
+.footer_text a {
     color: #fff;
 }
-.footer_text h3{
+
+.footer_text h3 {
     color: #fff;
     font-family: 'QuestaSans';
-    padding-bottom: 5%;
+    padding-bottom: 20px;
 }
-.footer_text>div{
+
+.footer_text > div {
     font-size: .7rem;
     line-height: 2;
     color: #fff;
+
 }
-.footer_sns a{
+
+.footer_text2 {
+    padding-bottom: 15px;
+}
+
+.footer_sns a {
     color: #fff;
 }
 
+.footer_sns {
+    display: flex;
+    width: 15%;
+    position: absolute;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer_sns img {
+    width: 25px;
+}

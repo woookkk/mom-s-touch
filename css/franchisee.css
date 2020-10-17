@@ -3,8 +3,8 @@
 /* franchisee.css - 가맹문의페이지 CSS */
 
 @import url(main.css);
-
 /*
+
 html,body{
     height: 100%;
     overflow: hidden;
@@ -20,11 +20,13 @@ body {
 }
 
 /*
-.franchisee_wrap {
+
+#franchisee_wrap {
     width: 100%;
     height: 100%;
     overflow: auto;
-}*/
+}
+*/
 
 /****************헤더 배너 영역 ****************/
 .franchisee_banner_box {
@@ -124,8 +126,19 @@ body {
 }
 
 .success_img1 {
+  /*  position: relative;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1.2s ease-in;*/
     margin: 15% 0 0 5%;
 }
+/*.active {
+    opacity: 1;
+    transform: translateY(15%);
+    transition-delay: 0.3s;
+    transition: all 1.2s ease-in-out;
+}*/
+
 
 .success_img1 > img {
     /*    box-shadow: 0 1px 5px grey;*/
@@ -164,9 +177,19 @@ body {
     justify-content: flex-end;
 }
 
-.success_img2 {
+.success_img2 { 
+    /*position: relative;
+    opacity: 0;
+    transform: translateY(15%);
+    transition: all 1s ease-in;*/
     margin-top: 10%;
 }
+/*
+.active2 {
+    opacity: 1;
+    transform: translateY(10%);
+    transition-delay: 0.3s;
+}*/
 
 .csuccess_img2 > img {
     box-shadow: 0 1px 5px grey;
@@ -215,7 +238,6 @@ body {
     width: 600px;
     box-shadow: 0 1px 5px grey;
 }
-
 .sec3_text_inbox2 {
     float: left;
     padding: 6% 0 0 5%;
@@ -236,6 +258,21 @@ body {
 .success_area_4 {
     margin-top: 7%;
     position: relative;
+}
+
+.sec3_img { 
+    position: relative;
+    opacity: 0;
+    transform: translateY(-15%);
+    transition: all 1s ease-in;/*
+    margin-top: 10%;*/
+}
+
+.active4 {
+    opacity: 1;
+    transform: translateY(15%);
+    transition-delay: 0.3s;/*
+    transition: all 1.2s ease-in-out;*/
 }
 
 .sec3_img > img {
@@ -497,24 +534,19 @@ table tr td {
 /*********** 탑버튼 ***************/
 .topbtn {
     position: absolute;
+    text-align: center;
+    padding-top: 12px;
     top: 80%;
     right: 5%;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height:65px;
     box-shadow: 0 0 4px grey;
     border-radius: 50%;
     cursor: pointer;
     z-index: 9999;
     display: none;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
-.top_btn_box {
-    display: flex;
-    margin: 15px 5px;
-}
-
-.top_btn_box > span {
-    padding-top: 18px;
-    font-size: 1.3rem;
-    color: #C7060E;
+.topbtn img{
+    height: 40px;
 }

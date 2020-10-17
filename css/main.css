@@ -194,10 +194,6 @@
     overflow: hidden;
 }
 
-.search_box:hover {
-    box-shadow: 0px 0px .5px 1px #C7060E;
-    width: 20%;
-}
 
 .search_btn {
     text-decoration: none;
@@ -225,7 +221,3 @@
     transition: .4s;
 }
 
-.search_box:hover > .search_txt {
-    width: 240px;
-    padding: 0 6px;
-}

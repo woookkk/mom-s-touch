@@ -1,7 +1,10 @@
 $(function () { ///////// jQB ///////////
     //console.log("로딩완료");
 
-
+    
+    
+    
+    
     var ftop = $(".info_icon_box").offset().top;
     //////// 스크롤 이벤트 설정하기 //////////
     $(window).scroll(function () {
