@@ -121,9 +121,18 @@ $(function () { //////// jQB////////
     } ////////////////////////////////////// chgMenu 함수 /////////////////
     
     
-    
-
-
+    $(".search_box").mouseenter(function(){
+        $(this).css({
+            boxShadow: "0px 0px .5px 1px #C7060E",
+            width: "20%"
+        });/// css //////
+        
+        $(".search_txt",this).css({
+            padding: "0 6px",
+            width: "240px"
+        });/// css //////
+        
+    }); //////// mouseenter /////////////
 
 
 }) /////////////// jQB /////////////////////////

@@ -1,18 +1,6 @@
 $(function () { ////////////// jQB /////////////////////
     console.log("로딩완료!");
 
-    //////////////// 대표 메뉴 ///////////////
-    $(".menu_list li").click(function () {
-
-        var idx = $(this).index();
-
-        //해당순번 li에 class="on" 지정하기
-        $(".menu_ban_list li").eq(idx).addClass("on")
-            .siblings().removeClass("on");
-        $(".menu_list li").eq(idx).addClass("on")
-            .siblings().removeClass("on");
-    }); ////////// click ////////////
-
     var addmenu;
 
     // 메뉴 이미지 설명글 셋팅 ! ///
@@ -325,7 +313,25 @@ $(function () { ////////////// jQB /////////////////////
 
     }; /////// bset 함수 ////////////
     //////////////////////////////////
+    
+    
+    //////////////// 대표 메뉴 ///////////////
+    $(".menu_list li").click(function () {
 
+        var idx = $(this).index();
+        console.log(idx);
+
+        //해당순번 li에 class="on" 지정하기
+        $(".menu_ban_list li").eq(idx).addClass("on")
+            .siblings().removeClass("on");
+        $(".menu_list li").eq(idx).addClass("on")
+            .siblings().removeClass("on");
+        
+        /// 숨긴 더보기 버튼 보이기
+        $(".add_menu span").show();
+        
+    }); ////////// click ////////////
+            
 
     var menu = "burger";
 
@@ -340,14 +346,24 @@ $(function () { ////////////// jQB /////////////////////
         "side": 15,
         "drink": 13
     };
+    
+    // 리스트가 추가될때마다 다시한번 click 설정을 바꿔야함!
+    // 따라서 함수로 만들어서 ~!!!
+    var showDesc = function(){
+        
+        $(".menu_click_box").click(function () {
+            $(this).next().show();
+        }); ////////// click /////////////
 
-    $(".menu_click_box").click(function () {
-        $(this).next().show();
-    }); ////////// click /////////////
+        $(".close_btn").click(function () {
+            $(this).parent().hide();
+        }); ////////// click ///////
+        
+    };////// showDesc 함수 ////////////
+    
 
-    $(".close_btn").click(function () {
-        $(this).parent().hide();
-    }); ////////// click ///////
+    //  설명박스 보이기 설정함수 호출!
+     showDesc();
 
 
 
@@ -355,11 +371,19 @@ $(function () { ////////////// jQB /////////////////////
     $(".add_menu span").click(function () {
         bset(8, limit[menu], menu);
         $(this).hide();
+        
+        
+        //  설명박스 보이기 설정함수 호출!
+        showDesc();
+
+
     }); ///////////////// click /////////////
+/*
 
     $("a").click(function (e) {
         e.preventDefault();
     });
+*/
 
 
     $(".menu_list li").click(function () {
@@ -371,6 +395,10 @@ $(function () { ////////////// jQB /////////////////////
         //최초호출: 0~8
         bset(0, 8, menu);
         $(".add_menu").show();
+        
+
+        //  설명박스 보이기 설정함수 호출!
+         showDesc();
 
 
     }); ///////// click ////////////////
@@ -385,7 +413,33 @@ $(function () { ////////////// jQB /////////////////////
           transition: ".5s"
        }); 
     });///// hover ////
-
+    
+    
+    /// 페이지 새로 고칠때 맨위로 가게하기(브라우저 캐쉬가 잘 안지워져서 쓰는 것임!) 
+    setTimeout(function () {
+        $("html,body").animate({
+            scrollTop: "0px"
+        }, 10); /// animate ////
+    }, 500); //// 타임아웃 ////////
+    
+    
+   /* var lpno = $(".gnb_box li a").index();
+    var tg = lpno.this
+    
+     var link = [
+                "menu.html",
+                "",
+                "info.html",
+                "franchisee.html"
+            ];
+    
+            $(".gnb_box li a").click(function(){
+                
+                console.log(lpno+"번째");
+                
+                location.href = link[lpno];
+                
+            });*////////click ///////////
 
 
 }); //////////////////// jQB /////////////////////////

@@ -13,8 +13,9 @@ body {
 .gnb_box > li a {
     color: #000;
 }
-
-.info_wrap {}
+/*.info_wrap{
+    position: relative;
+}*/
 
 /************ 배너영역*********************/
 #info_ban {
@@ -297,61 +298,33 @@ body {
 /* 지도 뷰 */
 .info_map_view {
     position: absolute;
+    width: 700px;
     top: 30%;
     right: 20%;
 }
 
-
-/*************** 푸터 영역 ********************/
-footer {
-    background-color: #222;
-    height: 20vmin;
-}
-.footer_wrap{
-    display: flex;
-    justify-content: space-around;
-}
-.footer_text a{
-    color: #fff;
-}
-.footer_text h3{
-    color: #fff;
-    font-family: 'QuestaSans';
-    padding-bottom: 5%;
-}
-.footer_text>div{
-    font-size: .7rem;
-    line-height: 2;
-    color: #fff;
-}
-.footer_sns a{
-    color: #fff;
+footer{
+    position: relative;
 }
 
+/*********** 탑버튼 ***************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.
+/*.info_topbtn {
+    position: absolute;
+    text-align: center;
+    padding-top: 12px;
+    top: 5%;
+    right: 5%;
+    width: 65px;
+    height:65px;
+    box-shadow: 0 0 4px grey;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+.topbtn img{
+    height: 40px;
+}

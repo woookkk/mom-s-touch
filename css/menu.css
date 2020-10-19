@@ -8,7 +8,7 @@
 
 
 
-body{
+body {
     background-color: #FFFCF6;
 }
 
@@ -16,13 +16,20 @@ body{
     box-shadow: 0 1px 5px grey;
 }
 
+.gnb_box > li a {
+    color: #222;
+}
+
 /************** 배너 *************/
+
+
 
 /*배너박스*/
 .menu_ban_list {
+    margin-top: 5%;
     position: relative;
     /*부모자격*/
-    height: 65vmin;
+    height: 60vmin;
 }
 
 .menu_ban_list li {
@@ -32,8 +39,208 @@ body{
     opacity: 0;
     /*모두 안보이게*/
     transition: opacity .8s;
-    /*트랜지션*/
+    overflow: hidden;
 }
+
+.menu_banner_text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.menu_banner_text h2 {
+    font-family: 'Montserrat-SemiBoldItalic';
+    font-size: 6rem;
+    padding-bottom: 12%;
+    color: #fff;
+}
+
+.menu_banner_text p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+/* 버거 배너 */
+
+.menu_ban_burger {
+    background-color: #e85a1c;
+}
+
+.menu_ban_burger_img1 {
+    position: absolute;
+    top: 23%;
+    left: -10%;
+    opacity: 0;
+    width: 700px;
+}
+
+.menu_ban_burger.on .menu_ban_burger_img1 {
+    animation: bgrAni1 .2s ease-in-out .5s forwards;
+}
+
+@keyframes bgrAni1 {
+    to {
+        left: 2%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+.menu_ban_burger_img2 {
+    position: absolute;
+    right: 0%;
+    top: 15%;
+    opacity: 0;
+}
+
+.menu_ban_burger.on .menu_ban_burger_img2 {
+    animation: bgrAni2 .2s ease-in-out 1s forwards;
+}
+
+@keyframes bgrAni2 {
+    to {
+        right: 7%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+/* 치킨배너 */
+
+.menu_ban_chicken {
+    background-color: #FFB24F;
+}
+
+.menu_ban_chicken_img1 {
+    position: absolute;
+    width: 750px;
+    right: 5%;
+    bottom: -15%;
+    opacity: 0;
+}
+
+.menu_ban_chicken.on .menu_ban_chicken_img1 {
+    animation: chkAni1 .2s ease-in-out .5s forwards;
+}
+
+@keyframes chkAni1 {
+    to {
+        right: 1%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+.menu_ban_chicken_img2 {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    width: 450px;
+    opacity: 0;
+}
+.menu_ban_chicken.on .menu_ban_chicken_img2 {
+    animation: chkAni2 .2s ease-in-out .1s forwards;
+}
+
+@keyframes chkAni2 {
+    to {
+        top: 5%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+
+/* 사이드 배너 */
+
+.menu_ban_side {
+    background-color: #C92C32;
+}
+
+.menu_ban_side_img1{
+    width: 500px;
+    top: -50%;
+    position: absolute;
+    left: 15%;
+    opacity: 0;
+}
+
+.menu_ban_side.on .menu_ban_side_img1 {
+    animation: sideAni1 .3s ease-in-out .6s forwards;
+}
+
+@keyframes sideAni1 {
+    to {
+        top: -20%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+.menu_ban_side_img2{
+    position: absolute;
+    right: 6%;
+    bottom: -40%;
+    width: 700px;
+    opacity: 0;
+}
+
+.menu_ban_side.on .menu_ban_side_img2 {
+    animation: sideAni2 .3s ease-in-out .1s forwards;
+}
+
+@keyframes sideAni2 {
+    to {
+        bottom: -16%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+
+/* 드링크 배너 */
+.menu_ban_drink {
+    background-color: #85c441;
+}
+
+.menu_ban_drink_img1{
+    width: 1500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30%;
+    opacity: 0;
+}
+
+.menu_ban_drink.on .menu_ban_drink_img1 {
+    animation: drinkAni1 .3s ease-in-out .1s forwards;
+}
+
+@keyframes drinkAni1 {
+    to {
+        top: -6%;
+        opacity: 1;
+    }
+}/*keyframes*/
+
+.menu_ban_drink_img2{
+    width: 900px;
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.menu_ban_drink.on .menu_ban_drink_img2 {
+    animation: drinkAni2 .3s ease-in-out .6s forwards;
+}
+
+@keyframes drinkAni2 {
+    to {
+        bottom: -20%;
+        opacity: 1;
+    }
+}/*keyframes*/
 
 .menu_ban_list li.on {
     /*class가 "on"인 li*/
@@ -42,18 +249,6 @@ body{
     /*맨위로 오게*/
 }
 
-/*배너 각 이미지 넣기*/
-.menu_ban_list li:first-child {
-    background: url(../images/menu_banner1.png) no-repeat center/cover;
-}
-
-.menu_ban_list li:nth-child(2) {
-    background: url(../images/menu_banner2.png) no-repeat center/cover;
-}
-
-.menu_ban_list li:nth-child(3) {
-    background: url(../images/menu_banner3.png) no-repeat center/cover;
-}
 
 /************ 클릭 메뉴 *************/
 
@@ -197,44 +392,46 @@ body{
     cursor: pointer;
     padding: 5% 0;
 }
-.add_menu span{
-	color: rgba(0,0,0,0.5);
-	font-weight: 700;
-	text-shadow: none;
+
+.add_menu span {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    text-shadow: none;
     padding: 6px 25px;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 /* Effect 12: circle */
 .add_menu span::before,
 .add_menu span::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 110px;
-	height: 110px;
-	border: 2px solid rgba(0, 0, 0, 0.1);
-	border-radius: 50%;
-	opacity: 0;
-	transition: transform 0.3s, opacity 0.3s;
-	transform: translateX(-50%) translateY(-50%) scale(0.2);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
 }
 
 .add_menu span::after {
-	width: 90px;
-	height: 90px;
-	border-width: 6px;
-	transform: translateX(-50%) translateY(-50%) scale(0.8);
+    width: 90px;
+    height: 90px;
+    border-width: 6px;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
 }
 
 .add_menu span:hover::before,
 .add_menu span:hover::after,
 .add_menu span:focus::before,
 .add_menu span:focus::after {
-	opacity: 1;
-	-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-	-moz-transform: translateX(-50%) translateY(-50%) scale(1);
-	transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 /* 메뉴 클릭시 상세 내용 */
@@ -254,7 +451,7 @@ body{
     padding: 3%;
 }
 
-.menu_box_on{
+.menu_box_on {
     display: block;
 }
 

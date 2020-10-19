@@ -6,7 +6,22 @@
     }
 
     #menu_list_wrap {
+        top: 28%;
         width: 52%;
+    }
+
+    .menu_ban_burger_img1 {
+        width: 600px;
+        top: 30%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 440px;
+    }
+
+    /*********  info page  *************/
+    .info_map_view {
+        width: 520px;
     }
 
 }
@@ -22,6 +37,29 @@
         width: 53%;
     }
 
+    .menu_ban_burger_img1 {
+        width: 500px;
+        top: 40%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 380px;
+        top: 20%;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 5.5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1.18rem;
+    }
+
+
+    /*********  info page  *************/
+    .info_map_view {
+        width: 520px;
+    }
 }
 
 
@@ -95,6 +133,25 @@
     .menu_list > li img {
         width: 73px;
     }
+
+    .menu_ban_burger_img1 {
+        width: 450px;
+        top: 50%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 300px; 
+        top: 25%;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -325,7 +382,7 @@
         padding-top: 8px;
         font-size: .8rem;
     }
-    
+
 
 }
 
@@ -348,7 +405,7 @@
     .add_menu span {
         font-size: .8rem;
     }
-    
+
     .menu_info_text {
         position: static;
     }
@@ -417,6 +474,7 @@
 }
 
 @media only screen and (max-width: 420px) {
+    /********* main page ***************/
 
     .main_ban_text2 {
         font-size: 1.11rem;
@@ -458,6 +516,7 @@
 
 @media only screen and (max-width: 375px) {
 
+
     /*********  memu page  *************/
 
     .burger_img {
@@ -483,4 +542,4 @@
     }
 
 
-    }
+}

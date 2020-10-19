@@ -17,42 +17,10 @@
     box-shadow: 0 1px 5px grey;
 }
 
-/************** 헤더 영역 **************/
-/*#header {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-}
 
-.logo {
-    width: 200px;
-    margin-left: 5%;
+.gnb_box > li a{
+    color: #f5f5f5;
 }
-
-.logo img {
-    width: 100%;
-}
-
-#gnb {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-    width: 450px;
-}
-
-.gnb_box {
-    width: 100%;
-}
-
-.gnb_box {
-    display: flex;
-    justify-content: space-around;
-}
-
-.gnb_box a {
-    color: #fff;
-}*/
 
 /************** 배너영역 ***************/
 
@@ -194,10 +162,6 @@
     overflow: hidden;
 }
 
-.search_box:hover {
-    box-shadow: 0px 0px .5px 1px #C7060E;
-    width: 20%;
-}
 
 .search_btn {
     text-decoration: none;
@@ -225,7 +189,3 @@
     transition: .4s;
 }
 
-.search_box:hover > .search_txt {
-    width: 240px;
-    padding: 0 6px;
-}
