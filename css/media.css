@@ -126,6 +126,7 @@
         width: 52%;
     }
 
+<<<<<<< HEAD
     /* 버거배너 */
     @keyframes bgrAni1 {
         to {
@@ -139,6 +140,20 @@
             right: 11%;
             opacity: 1;
         }
+=======
+    .menu_ban_burger_img1 {
+        width: 600px;
+        top: 30%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 440px;
+    }
+
+    /*********  info page  *************/
+    .info_map_view {
+        width: 520px;
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
     }
 
 }
@@ -154,6 +169,7 @@
         width: 53%;
     }
 
+<<<<<<< HEAD
     .menu_banner_text h2 {
         font-size: 5.5rem;
     }
@@ -236,6 +252,26 @@
             opacity: 1;
         }
     }
+=======
+    .menu_ban_burger_img1 {
+        width: 500px;
+        top: 40%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 380px;
+        top: 20%;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 5.5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1.18rem;
+    }
+
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 
     /*********  info page  *************/
     .info_map_view {
@@ -387,6 +423,7 @@
         width: 73px;
     }
 
+<<<<<<< HEAD
     /* 버거배너 */
     .menu_ban_burger_img1 {
         width: 40%;
@@ -404,6 +441,16 @@
             right: 8%;
             opacity: 1;
         }
+=======
+    .menu_ban_burger_img1 {
+        width: 450px;
+        top: 50%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 300px; 
+        top: 25%;
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
     }
 
     .menu_banner_text h2 {
@@ -414,6 +461,7 @@
         font-size: 1rem;
     }
 
+<<<<<<< HEAD
     .menu_ban_list {
         margin-top: 0%;
         height: 65vmin;
@@ -472,6 +520,8 @@
 
 
 
+=======
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1156,10 +1206,13 @@
 @media only screen and (max-width: 375px) {
 
 
+<<<<<<< HEAD
     .logo {
         width: 100px;
     }
 
+=======
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
     /*********  memu page  *************/
 
     .burger_img {
@@ -1184,9 +1237,12 @@
         font-size: .5rem;
     }
 
+<<<<<<< HEAD
     .menu_banner_text h2 {
         font-size: 2.5rem;
     }
 
+=======
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 
 }

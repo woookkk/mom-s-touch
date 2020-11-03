@@ -91,6 +91,15 @@ body {
     border: 2px solid #C7060E;
     border-bottom: none;
 }
+<<<<<<< HEAD
+=======
+
+.franchisee_menu_list li:hover a{
+    background-color: #fff;
+    color: #000;
+}
+
+>>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 
 
 /*************  성공요인 ***************/
