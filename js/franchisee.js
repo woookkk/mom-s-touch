@@ -114,6 +114,21 @@ $(function () { ////////////// jQB /////////////////////
     }); //////// click /////////////
     ////////////////////////////////
 
+
+    ////////// 메뉴 이동 리스트 !! ////////
+    $(".franchisee_menu_list li").click(function () {
+        $(this).addClass("franchisee_click")
+            .css({
+                borderBottom: "none"
+            })
+            .siblings()
+            .removeClass("franchisee_click")
+            .css({
+                borderBottom: "2px solid #C7060E"
+            })
+
+    }); ///////////// click ///////////////////
+
     /// 탑버튼 클릭시 맨위로 이동하기 ////
     $(".topbtn").click(function () {
         click_sts = 1; //스크롤잠금
@@ -124,42 +139,42 @@ $(function () { ////////////// jQB /////////////////////
         }); /// animate /////
 
     }); ////////// click ///////////
-    
-    
-/*
-
-    var infotop = $(".success_box").offset().top;
-    //////// 스크롤 이벤트 설정하기 //////////
-    $(window).scroll(function () {
-        //현재 window의 스크롤바 위치(세로 스크롤)
-        var cTop = $(this).scrollTop();
-        console.log("현재스크롤바위치: " + cTop);
-        console.log(infotop);
-
-        if (cTop > infotop - 1000 && cTop < infotop) {
-            $(".success_img1").addClass("active");
-        } else {
-
-            $(".success_img1").removeClass("active");
-        };
-        
-        if (cTop > infotop + 80 && cTop < infotop + 1000) {
-            $(".success_img2").addClass("active2");
-        } else {
-
-            $(".success_img2").removeClass("active2");
-        };
-        
-        if (cTop > infotop + 100 && cTop < infotop + 1200) {
-            $(".sec3_img").addClass("active4");
-        } else {
-
-            $(".sec3_img").removeClass("active4");
-        }
-    }); ////////////// scroll ////////////////
 
 
-*/
+    /*
+
+        var infotop = $(".success_box").offset().top;
+        //////// 스크롤 이벤트 설정하기 //////////
+        $(window).scroll(function () {
+            //현재 window의 스크롤바 위치(세로 스크롤)
+            var cTop = $(this).scrollTop();
+            console.log("현재스크롤바위치: " + cTop);
+            console.log(infotop);
+
+            if (cTop > infotop - 1000 && cTop < infotop) {
+                $(".success_img1").addClass("active");
+            } else {
+
+                $(".success_img1").removeClass("active");
+            };
+            
+            if (cTop > infotop + 80 && cTop < infotop + 1000) {
+                $(".success_img2").addClass("active2");
+            } else {
+
+                $(".success_img2").removeClass("active2");
+            };
+            
+            if (cTop > infotop + 100 && cTop < infotop + 1200) {
+                $(".sec3_img").addClass("active4");
+            } else {
+
+                $(".sec3_img").removeClass("active4");
+            }
+        }); ////////////// scroll ////////////////
+
+
+    */
 
 
 
@@ -223,7 +238,7 @@ $(function () { ////////////// jQB /////////////////////
             '</div>' +
             '</li>' +
             '<li class="step_list_text">' +
-            '<ul>' +
+            '<ul class="step_list_text_area">' +
             '<li class="step_text_title">' + stepT[i] + '</li>' +
             '<li>' + stepLf[i] + '</li>' +
             '<li>' + stepLs[i] + '</li>' +
@@ -246,7 +261,7 @@ $(function () { ////////////// jQB /////////////////////
             '</div>' +
             '</li>' +
             '<li class="step_list_text">' +
-            '<ul>' +
+            '<ul class="step_list_text_area">' +
             '<li class="step_text_title">' + stepT[i] + '</li>' +
             '<li>' + stepLf[i] + '</li>' +
             '<li>' + stepLs[i] + '</li>' +

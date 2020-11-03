@@ -1,3 +1,119 @@
+@media only screen and (max-width: 1800px) {
+
+    /*********  memu page  *************/
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        top: 33%;
+    }
+
+    @keyframes bgrAni1 {
+        to {
+            left: 4%;
+            opacity: 1;
+        }
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img2 {
+        left: 15%;
+    }
+
+    /* 음료 배너 */
+    @keyframes drinkAni2 {
+        to {
+            bottom: -30%;
+            opacity: 1;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1536px) {
+    /*********  memu page  *************/
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        width: 36%;
+        top: 35%;
+    }
+
+    @keyframes bgrAni1 {
+        to {
+            left: 2%;
+            opacity: 1;
+        }
+    }
+
+    .menu_ban_burger_img2 {
+        width: 22%;
+        top: 20%;
+        right: 5%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 12%;
+            opacity: 1;
+        }
+    }
+
+    /* 치킨 배너 */
+    .menu_ban_chicken_img2 {
+        left: 13%;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 14%;
+            opacity: 1;
+        }
+    }
+
+    /* 사이드 배너 */
+    .menu_ban_side_img2 {
+        position: absolute;
+        width: 42%;
+    }
+
+    @keyframes sideAni2 {
+        to {
+            bottom: -16%;
+            opacity: 1;
+        }
+    }
+
+    .menu_ban_side_img1 {
+        width: 16%;
+    }
+
+    @keyframes sideAni1 {
+        to {
+            top: -6%;
+            opacity: 1;
+        }
+    }
+
+
+    /* 음료 배너 */
+    .menu_ban_drink_img1 {
+        width: 80%;
+    }
+
+    .menu_ban_drink_img2 {
+        width: 55%;
+    }
+
+    @keyframes drinkAni2 {
+        to {
+            bottom: -30%;
+            opacity: 1;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 1500px) {
 
     /*********  memu page  *************/
@@ -9,16 +125,25 @@
         top: 28%;
         width: 52%;
     }
-    
-    
-    /*********  info page  *************/
-    .info_map_view {
-    width: 520px;
+
+    /* 버거배너 */
+    @keyframes bgrAni1 {
+        to {
+            left: 1%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 11%;
+            opacity: 1;
+        }
     }
 
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1251px) {
 
     /*********  memu page  *************/
     .menu_list > li img {
@@ -28,9 +153,93 @@
     #menu_list_wrap {
         width: 53%;
     }
+
+    .menu_banner_text h2 {
+        font-size: 5.5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1.18rem;
+    }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        top: 50%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 300px;
+        right: 3%;
+        top: 20%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 10%;
+            opacity: 1;
+        }
+    }
+
+    /* 치킨 배너 */
+
+    .menu_ban_chicken_img1 {
+        width: 45%;
+        bottom: -23%;
+    }
+
+    .menu_ban_chicken_img2 {
+        left: 10%;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 23%;
+            opacity: 1;
+        }
+    }
+
+    /* 사이드 배너 */
+    .menu_ban_side_img1 {
+        width: 17%;
+    }
+
+    .menu_ban_side_img2 {
+        width: 46%;
+    }
+
+    @keyframes sideAni2 {
+        to {
+            bottom: -10%;
+            opacity: 1;
+        }
+    }
+
+    /* 음료배너 */
+    .menu_ban_drink_img1 {
+        width: 80%;
+    }
+
+    @keyframes drinkAni1 {
+        to {
+            top: 0%;
+            opacity: 1;
+        }
+    }
+
+    .menu_ban_drink_img2 {
+        width: 65%;
+    }
+
+    @keyframes drinkAni2 {
+        to {
+            bottom: -25%;
+            opacity: 1;
+        }
+    }
+
     /*********  info page  *************/
     .info_map_view {
-    width: 520px;
+        width: 520px;
     }
 }
 
@@ -64,6 +273,7 @@
     }
 
     /*********  memu page  *************/
+
     .burger_img {
         width: 190px;
     }
@@ -71,6 +281,76 @@
     #menu_list_wrap {
         width: 55%;
     }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        top: 53%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 280px;
+        top: 20%;
+    }
+
+    @keyframes bgrAni1 {
+        to {
+            left: 3%;
+            opacity: 1;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1150px) {
+    /*********  memu page  *************/
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 40%;
+    }
+
+    .menu_ban_chicken_img2 {
+        left: 10%;
+        top: 0;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 15%;
+            opacity: 1;
+        }
+    }
+
+    /* 사이드 배너 */
+
+    @keyframes sideAni1 {
+        to {
+            top: -5%;
+            opacity: 1;
+        }
+    }
+
+    .menu_ban_side_img2 {
+        width: 48%;
+    }
+
+    /* 음료배너 */
+    .menu_ban_drink_img1 {
+        width: 85%;
+    }
+
+    .menu_ban_drink_img2 {
+        width: 68%;
+    }
+
+    @keyframes drinkAni2 {
+        to {
+            bottom: -23%;
+            opacity: 1;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 1080px) {
@@ -97,6 +377,7 @@
     }
 
     /*********  memu page  *************/
+
     .burger_img {
         width: 185px;
         margin: 15% 5%;
@@ -105,6 +386,92 @@
     .menu_list > li img {
         width: 73px;
     }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        width: 40%;
+        top: 57%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 260px;
+        top: 22%;
+        right: 2%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 8%;
+            opacity: 1;
+        }
+    }
+
+    .menu_banner_text h2 {
+        font-size: 5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1rem;
+    }
+
+    .menu_ban_list {
+        margin-top: 0%;
+        height: 65vmin;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        bottom: -11%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 23%;
+        top: 20%;
+        left: 9%;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 26%;
+            opacity: 1;
+        }
+    }
+
+    /* 사이드 배너 */
+
+    .menu_ban_side_img1 {
+        width: 19%;
+    }
+
+    .menu_ban_side_img2 {
+        width: 55%;
+    }
+
+    @keyframes sideAni2 {
+        to {
+            bottom: -10%;
+            opacity: 1;
+        }
+    }
+
+    /* 음료배너 */
+    .menu_ban_drink_img1 {
+        width: 80%;
+    }
+
+    .menu_ban_drink_img2 {
+        width: 70%;
+    }
+
+    @keyframes drinkAni2 {
+        to {
+            bottom: -15%;
+            opacity: 1;
+        }
+    }
+
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -119,6 +486,8 @@
     }
 
     /*********  memu page  *************/
+
+
     .burger_img {
         width: 180px;
         margin: 15% 6%;
@@ -130,6 +499,24 @@
 
     .menu_list > li img {
         width: 75px;
+    }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        top: 60%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 25%;
+        top: 21%;
+        right: 0%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 6%;
+            opacity: 1;
+        }
     }
 }
 
@@ -143,6 +530,28 @@
 
     .menu_list > li img {
         width: 72px;
+    }
+
+    /* 버거배너 */
+
+    .menu_ban_burger_img2 {
+        width: 240px;
+        top: 25%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 8%;
+            opacity: 1;
+        }
+    }
+
+    .menu_banner_text h2 {
+        font-size: 4.5rem;
+    }
+
+    .menu_banner_text p {
+        font-size: .97rem;
     }
 }
 
@@ -197,6 +606,71 @@
     .menu_list > li img {
         width: 70px;
     }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        width: 45%;
+        top: 62%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 5%;
+            opacity: 1;
+        }
+    }
+
+    .menu_banner_text h2 {
+        font-size: 4.3rem;
+    }
+
+    .menu_banner_text p {
+        font-size: .97rem;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 42%;
+        bottom: -11%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 24%;
+        left: 7%;
+    }
+
+    /* 음료배너 */
+    .menu_ban_drink_img1 {
+        width: 83%;
+    }
+
+    .menu_ban_drink_img2 {
+        width: 75%;
+    }
+
+    /* 사이드 배너 */
+
+    .menu_ban_side_img1 {
+        width: 19%;
+    }
+
+    @keyframes sideAni1 {
+        to {
+            top: -4%;
+            opacity: 1;
+        }
+    }
+
+    .menu_ban_side_img2 {
+        width: 55%;
+    }
+
+    @keyframes sideAni2 {
+        to {
+            bottom: -10%;
+            opacity: 1;
+        }
+    }
 }
 
 @media only screen and (max-width: 840px) {
@@ -215,9 +689,25 @@
     .menu_list > li img {
         width: 70px;
     }
+
+    /* 버거배너 */
+
+    .menu_ban_burger_img2 {
+        width: 220px;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 44%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 25%;
+        left: 5%;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     /********* main page ***************/
     .main_ban_text2::after {
@@ -274,6 +764,44 @@
         width: 70px;
     }
 
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        top: 62%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 210px;
+        top: 27%;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 3%;
+            opacity: 1;
+        }
+    }
+
+    .menu_banner_text h2 {
+        font-size: 4rem;
+        padding-bottom: 10%;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 46%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 25%;
+        left: 4%;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 28%;
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -291,6 +819,37 @@
 
     .menu_list > li img {
         width: 60px;
+    }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        width: 47%;
+        top: 60%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 27%;
+        top: 30%;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 3.6rem;
+        padding-bottom: 8%;
+    }
+
+    .menu_banner_text p {
+        font-size: .8rem;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 49%;
+        bottom: -8%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 26%;
+        left: 3%;
     }
 }
 
@@ -313,6 +872,21 @@
     .hammenu span:nth-of-type(2) {
         top: 13px;
     }
+
+    /*********  memu page  *************/
+
+    /* 버거배너 */
+    .menu_ban_burger_img2 {
+        right: -5%;
+        opacity: 0;
+    }
+
+    @keyframes bgrAni2 {
+        to {
+            right: 1%;
+            opacity: 1;
+        }
+    }
 }
 
 @media only screen and (max-width: 590px) {
@@ -333,9 +907,9 @@
 
     .menu_list h3 {
         padding-top: 8px;
-        font-size: .8rem;
+        font-size: .89rem;
     }
-    
+
 
 }
 
@@ -358,7 +932,7 @@
     .add_menu span {
         font-size: .8rem;
     }
-    
+
     .menu_info_text {
         position: static;
     }
@@ -373,6 +947,43 @@
 
     #menu_box {
         position: relative;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 3.3rem;
+    }
+
+    .menu_banner_text p {
+        font-size: .78rem;
+    }
+
+    /* 버거배너 */
+    .menu_ban_burger_img1 {
+        width: 45%;
+        top: 62%;
+    }
+
+    .menu_ban_burger_img2 {
+        width: 25%;
+        top: 33%;
+    }
+
+    /* 치킨배너 */
+    .menu_ban_chicken_img1 {
+        width: 46%;
+    }
+
+    .menu_ban_chicken_img2 {
+        width: 24%;
+        top: 25%;
+        left: 2%;
+    }
+
+    @keyframes chkAni2 {
+        to {
+            top: 35%;
+            opacity: 1;
+        }
     }
 }
 
@@ -427,6 +1038,7 @@
 }
 
 @media only screen and (max-width: 420px) {
+    /********* main page ***************/
 
     .main_ban_text2 {
         font-size: 1.11rem;
@@ -464,9 +1076,89 @@
         font-size: .9rem;
     }
 
+    /* 버거배너 */
+    .menu_ban_burger_img3 {
+        display: none;
+    }
+
+    .menu_ban_burger_img2 {
+        display: none;
+    }
+
+    .menu_banner_text h2 {
+        font-size: 2.9rem;
+    }
+
+    .menu_banner_text p {
+        font-size: .75rem;
+    }
+
+    .menu_ban_burger_img3 {
+        position: absolute;
+        display: block;
+        width: 60%;
+        top: 62%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu_ban_burger.on .menu_ban_burger_img1 {
+        animation: none;
+    }
+
+    /* 치킨 배너 */
+    .menu_ban_chicken_img2 {
+        display: none;
+    }
+
+    .menu_ban_chicken.on .menu_ban_chicken_img2 {
+        animation: none;
+    }
+
+    .menu_ban_chicken_img1 {
+        left: 50%;
+        top: 66%;
+        width: 67%;
+        transform: translateX(-50%);
+    }
+
+    /* 사이드 배너 */
+    .menu_ban_side_img1 {
+        display: none;
+    }
+
+    .menu_ban_side_img2 {
+        opacity: 1;
+        bottom: -10%;
+    }
+
+    .menu_ban_side.on .menu_ban_side_img2 {
+        animation: none;
+    }
+
+
+    /* 음료배너 */
+    .menu_ban_drink_img1 {
+        display: none;
+    }
+
+    .menu_ban_drink_img2 {
+        opacity: 1;
+        bottom: -15%;
+    }
+
+    .menu_ban_drink.on .menu_ban_drink_img2 {
+        animation: none;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
+
+
+    .logo {
+        width: 100px;
+    }
 
     /*********  memu page  *************/
 
@@ -492,5 +1184,9 @@
         font-size: .5rem;
     }
 
-
+    .menu_banner_text h2 {
+        font-size: 2.5rem;
     }
+
+
+}

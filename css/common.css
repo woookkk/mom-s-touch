@@ -41,6 +41,7 @@
     justify-content: space-around;
 }
 
+
 .gnb_box > li a {
     color: #222;
     overflow: hidden;
@@ -87,7 +88,7 @@
     position: absolute;
     width: 50px;
     height: 35px;
-    top: 10%;
+    top: 15%;
     right: 5%;
     display: none;
 }
@@ -168,48 +169,42 @@
 /*************** 푸터 영역 ********************/
 footer {
     background-color: #222;
-    height: 30vmin;
+/*    height: 30vmin;*/
 }
-
-.footer_wrap {
+.footer_wrap{
+    color: #fff;
     padding: 4% 0;
     text-align: center;
 }
-
 .footer_text a {
     color: #fff;
 }
+.footer_sns{
+    width: 15%;
+    margin: 0 auto;
+}
+.footer_sns li{
+    float: left;
+    width: 33.33%;
+}
 
 .footer_text h3 {
-    color: #fff;
     font-family: 'QuestaSans';
     padding-bottom: 20px;
 }
-
 .footer_text > div {
     font-size: .7rem;
     line-height: 2;
-    color: #fff;
-
 }
 
 .footer_text2 {
     padding-bottom: 15px;
 }
-
-.footer_sns a {
-    color: #fff;
-}
-
-.footer_sns {
-    display: flex;
-    width: 15%;
-    position: absolute;
-    justify-content: space-around;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .footer_sns img {
     width: 25px;
+}
+.footer_text>p{
+    padding-top: 20px;
+    font-size: .6rem;
+    
 }

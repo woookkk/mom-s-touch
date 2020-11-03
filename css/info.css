@@ -13,7 +13,9 @@ body {
 .gnb_box > li a {
     color: #000;
 }
-
+/*.info_wrap{
+    position: relative;
+}*/
 
 /************ 배너영역*********************/
 #info_ban {
@@ -301,52 +303,28 @@ body {
     right: 20%;
 }
 
-
-/*************** 푸터 영역 ********************/
-footer {
-    background-color: #222;
-    height: 30vmin;
+footer{
+    position: relative;
 }
 
-.footer_wrap {
-    padding: 4% 0;
-    text-align: center;
-}
+/*********** 탑버튼 ***************/
 
-.footer_text a {
-    color: #fff;
-}
 
-.footer_text h3 {
-    color: #fff;
-    font-family: 'QuestaSans';
-    padding-bottom: 20px;
-}
-
-.footer_text > div {
-    font-size: .7rem;
-    line-height: 2;
-    color: #fff;
-
-}
-
-.footer_text2 {
-    padding-bottom: 15px;
-}
-
-.footer_sns a {
-    color: #fff;
-}
-
-.footer_sns {
-    display: flex;
-    width: 15%;
+/*.info_topbtn {
     position: absolute;
-    justify-content: space-around;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer_sns img {
-    width: 25px;
+    text-align: center;
+    padding-top: 12px;
+    top: 5%;
+    right: 5%;
+    width: 65px;
+    height:65px;
+    box-shadow: 0 0 4px grey;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+.topbtn img{
+    height: 40px;
 }

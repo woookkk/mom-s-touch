@@ -55,7 +55,7 @@ body {
 .franchisee_banner_text > div {
     line-height: 1.5;
     color: #cbcbcb;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 10%;
 }
 
@@ -68,36 +68,29 @@ body {
     transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
-    width: 80vmin;
+    width: 90vmin;
 }
-
-.franchisee_menu_list {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
-    width: 80vmin;
-    border: 1px solid #fff;
+.franchisee_menu_list li{
+    width: 25%;
+    border-bottom: 2px solid #C7060E;
+    padding: .7em 0;
 }
-
-.franchisee_menu_list li {
-    height: 50px;
-    line-height: 50px;
-    border-right: 1px solid #fff;
+.franchisee_menu_list li:first-child{
+    border-bottom: none;
 }
-
-.franchisee_menu_list li:last-child {
-    border-right: none;
-}
-
-.franchisee_menu_list a {
-    color: #fff;
+.franchisee_menu_list a{
+    color: #dddddd;
     display: block;
-    width: 20vmin;
+    transition: .5s;
+    font-size: 1.1rem;
 }
-
+.franchisee_menu_list a:hover{
+    color: rgba(199, 6, 14, 0.9);
+}
+.franchisee_click{
+    border: 2px solid #C7060E;
+    border-bottom: none;
+}
 
 
 /*************  성공요인 ***************/
@@ -156,18 +149,18 @@ body {
 }
 
 .sec1_text1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding-bottom: 5%;
 }
 
 .sec1_text2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     padding-bottom: 10%;
 }
 
 .sec1_text3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 1.5;
 }
 
@@ -204,20 +197,20 @@ body {
 
 .sec2_text1,
 .sec3_text3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 1.5;
     padding-bottom: 5%;
 }
 
 .sec2_text2,
 .sec3_text2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     padding-bottom: 5%;
 }
 
 .sec2_text_box p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     padding-bottom: 5%;
 }
@@ -244,13 +237,13 @@ body {
 }
 
 .sec3_text1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 1.3;
     padding-bottom: 2%;
 }
 
 .sec3_text4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.7;
 }
 
@@ -377,7 +370,6 @@ body {
     margin: 0 auto;
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .step_list_wrap2 {
@@ -386,7 +378,6 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
 }
 
 .step_img {
@@ -399,7 +390,7 @@ body {
 
 .step_list_box {
     width: 21%;
-    margin-bottom: 5.3%;
+    margin: 0 2% 5.3% 2%;
     background-color: #fff;
     box-shadow: -4px 5px 15px 4px rgba(235, 235, 235, 0.45);
 }
@@ -421,6 +412,9 @@ body {
     margin-top: 10%;
     padding-left: 5%;
 }
+.step_list_text_area{
+    padding-bottom: 5%;
+}
 
 .step_list_text li {
     line-height: 2;
@@ -434,14 +428,14 @@ body {
     content: url(../images/step_arrow.png);
     position: absolute;
     top: 90%;
-    right: -17%;
+    right: -15%;
 }
 
 .step_list_wrap2 > .step_list_box .step_img::after {
     content: url(../images/step_arrow.png);
     position: absolute;
     top: 90%;
-    right: -17%;
+    right: -15%;
     transform: rotate(180deg);
 }
 
@@ -526,7 +520,7 @@ table tr td {
     text-align: center;
     line-height: 50px;
     /* box-shadow: 0 1px 5px #333; */
-    margin: 5% auto;
+    margin: 10% auto;
 
 }
 
@@ -545,7 +539,7 @@ table tr td {
     cursor: pointer;
     z-index: 9999;
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .topbtn img{
     height: 40px;
