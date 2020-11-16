@@ -134,9 +134,9 @@
 
 /****** article 공통 class *******/
 .com_wrap {
-    width: 1224px;
+    width: 100%;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1224px;
 }
 
 .com_title {
@@ -152,6 +152,7 @@
 .com_guid_img {
     display: block;
     padding: 10% 0 1%;
+    width: 10%;
 }
 
 .red_circle h2::after {

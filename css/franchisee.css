@@ -41,6 +41,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     color: #fff;
 
@@ -48,7 +49,7 @@ body {
 
 .franchisee_banner_text h2 {
     font-size: 2rem;
-    padding-bottom: 7%;
+    padding-bottom: 3%;
     text-shadow: 0px 3px 5px #333;
 }
 
@@ -57,49 +58,47 @@ body {
     color: #cbcbcb;
     font-size: 1.3rem;
     margin-bottom: 10%;
+    text-shadow: 1px 0 #3d3d3d, -1px 0 #3d3d3d, 0 1px #3d3d3d, 0 -1px #3d3d3d;
 }
 
 /* 이동 메뉴 */
 
 .franchisee_menu_list {
     position: absolute;
-    bottom: 25%;
+    bottom: 26%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 90vmin;
 }
-.franchisee_menu_list li{
+
+.franchisee_menu_list li {
     width: 25%;
     border-bottom: 2px solid #C7060E;
     padding: .7em 0;
 }
-.franchisee_menu_list li:first-child{
+
+.franchisee_menu_list li:first-child {
     border-bottom: none;
 }
-.franchisee_menu_list a{
+
+.franchisee_menu_list a {
     color: #dddddd;
     display: block;
     transition: .5s;
     font-size: 1.1rem;
 }
-.franchisee_menu_list a:hover{
+
+.franchisee_menu_list a:hover {
     color: rgba(199, 6, 14, 0.9);
 }
-.franchisee_click{
+
+.franchisee_click {
     border: 2px solid #C7060E;
     border-bottom: none;
 }
-<<<<<<< HEAD
-=======
-
-.franchisee_menu_list li:hover a{
-    background-color: #fff;
-    color: #000;
-}
-
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 
 
 /*************  성공요인 ***************/
@@ -125,15 +124,17 @@ body {
 .sec1_text_box {
     padding-top: 15%;
     text-align: right;
+    width: 40%;
 }
 
 .success_img1 {
-  /*  position: relative;
+    /*  position: relative;
     opacity: 0;
     transform: translateY(50%);
     transition: all 1.2s ease-in;*/
     margin: 15% 0 0 5%;
 }
+
 /*.active {
     opacity: 1;
     transform: translateY(15%);
@@ -144,6 +145,7 @@ body {
 
 .success_img1 > img {
     /*    box-shadow: 0 1px 5px grey;*/
+    width: 100%;
     opacity: .9;
 }
 
@@ -174,18 +176,24 @@ body {
 }
 
 /* 성공요인 2*/
-.success_area_2 {
+.success_area_2_area {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.success_img2 { 
+.success_img2 {
+    text-align: right;
+}
+
+.success_img2 > img {
     /*position: relative;
     opacity: 0;
     transform: translateY(15%);
     transition: all 1s ease-in;*/
     margin-top: 10%;
+    width: 100%;
 }
+
 /*
 .active2 {
     opacity: 1;
@@ -235,11 +243,12 @@ body {
     padding-top: 8%;
 }
 
-.success_img3 > img {
+.success_img_3 {
     float: left;
-    width: 600px;
+    width: 50%;
     box-shadow: 0 1px 5px grey;
 }
+
 .sec3_text_inbox2 {
     float: left;
     padding: 6% 0 0 5%;
@@ -262,25 +271,26 @@ body {
     position: relative;
 }
 
-.sec3_img { 
+.sec3_img {
     position: relative;
     opacity: 0;
     transform: translateY(-15%);
-    transition: all 1s ease-in;/*
+    transition: all 1s ease-in;
+    /*
     margin-top: 10%;*/
 }
 
 .active4 {
     opacity: 1;
     transform: translateY(15%);
-    transition-delay: 0.3s;/*
+    transition-delay: 0.3s;
+    /*
     transition: all 1.2s ease-in-out;*/
 }
 
 .sec3_img > img {
-    width: 100%;
     float: right;
-    width: 700px;
+    width: 65%;
     box-shadow: 0 1px 5px grey;
 }
 
@@ -291,7 +301,7 @@ body {
     width: 250px;
     height: 50px;
     top: 50%;
-    left: 10%;
+/*    left: 10%;*/
     text-align: center;
     line-height: 50px;
     box-shadow: 0 1px 5px #333;
@@ -328,7 +338,7 @@ body {
 .condition_list_box {
     display: flex;
     position: absolute;
-    width: 70rem;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -359,7 +369,7 @@ body {
 /***************** 개설 절차******************/
 
 .step_wrap {
-    margin: 10% 0;
+    margin: 20% 0;
 }
 
 .step_main_title {
@@ -379,6 +389,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .step_list_wrap2 {
@@ -386,6 +397,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
 }
 
@@ -421,7 +433,8 @@ body {
     margin-top: 10%;
     padding-left: 5%;
 }
-.step_list_text_area{
+
+.step_list_text_area {
     padding-bottom: 5%;
 }
 
@@ -440,7 +453,7 @@ body {
     right: -15%;
 }
 
-.step_list_wrap2 > .step_list_box .step_img::after {
+.step_list_wrap2 > .step_list_box>li .step_img::after {
     content: url(../images/step_arrow.png);
     position: absolute;
     top: 90%;
@@ -465,6 +478,10 @@ body {
 }
 
 /*********** 투자비용 *************/
+
+.cost_wrap {
+    margin-bottom: 13%;
+}
 
 .cost_main_title {
     font-size: 2rem;
@@ -507,6 +524,11 @@ table tr td {
     height: auto;
 }
 
+table tr td:first-child, table tr td:last-child {
+    min-width: 70px;
+}
+
+
 .cost_list_text span {
     color: #C7060E;
 }
@@ -529,7 +551,7 @@ table tr td {
     text-align: center;
     line-height: 50px;
     /* box-shadow: 0 1px 5px #333; */
-    margin: 10% auto;
+    margin: 15% auto;
 
 }
 
@@ -542,7 +564,7 @@ table tr td {
     top: 80%;
     right: 5%;
     width: 65px;
-    height:65px;
+    height: 65px;
     box-shadow: 0 0 4px grey;
     border-radius: 50%;
     cursor: pointer;
@@ -550,6 +572,7 @@ table tr td {
     display: none;
     background-color: rgba(255, 255, 255, 0.7);
 }
-.topbtn img{
+
+.topbtn img {
     height: 40px;
 }

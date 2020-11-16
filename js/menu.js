@@ -320,17 +320,10 @@ $(function () { ////////////// jQB /////////////////////
     
     //////////////// 대표 메뉴 ///////////////
     $(".menu_list li").click(function () {
-<<<<<<< HEAD
 
         var idx = $(this).index();
         console.log(idx);
 
-=======
-
-        var idx = $(this).index();
-        console.log(idx);
-
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
         //해당순번 li에 class="on" 지정하기
         $(".menu_ban_list li").eq(idx).addClass("on")
             .siblings().removeClass("on");

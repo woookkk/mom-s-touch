@@ -126,7 +126,6 @@
         width: 52%;
     }
 
-<<<<<<< HEAD
     /* 버거배너 */
     @keyframes bgrAni1 {
         to {
@@ -140,21 +139,19 @@
             right: 11%;
             opacity: 1;
         }
-=======
-    .menu_ban_burger_img1 {
-        width: 600px;
-        top: 30%;
     }
 
-    .menu_ban_burger_img2 {
-        width: 440px;
+    /*************** franchisee page ************/
+
+    /* 개설절차 */
+    .step_list_text_area li {
+        font-size: .9rem;
     }
 
-    /*********  info page  *************/
-    .info_map_view {
-        width: 520px;
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
+    .step_list_text .step_text_title {
+        font-size: 1.25rem;
     }
+
 
 }
 
@@ -169,7 +166,6 @@
         width: 53%;
     }
 
-<<<<<<< HEAD
     .menu_banner_text h2 {
         font-size: 5.5rem;
     }
@@ -252,33 +248,28 @@
             opacity: 1;
         }
     }
-=======
-    .menu_ban_burger_img1 {
-        width: 500px;
-        top: 40%;
-    }
-
-    .menu_ban_burger_img2 {
-        width: 380px;
-        top: 20%;
-    }
-
-    .menu_banner_text h2 {
-        font-size: 5.5rem;
-    }
-
-    .menu_banner_text p {
-        font-size: 1.18rem;
-    }
-
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 
     /*********  info page  *************/
     .info_map_view {
         width: 520px;
     }
-}
 
+    /***************** franchisee page ****************/
+
+    /* 공통 class */
+    .com_wrap {
+        width: 90%;
+    }
+
+    /* 성공요인 */
+    .success_area_3 .success_img_3 {
+        width: 46%;
+    }
+
+    .success_area_4 .sec3_img > img {
+        width: 60%;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -335,6 +326,13 @@
         }
     }
 
+    /***************** franchisee page **************/
+
+    /* 성공요인 */
+
+    .success_area_2_area .success_img2 > img {
+        width: 90%;
+    }
 
 }
 
@@ -387,6 +385,54 @@
         }
     }
 
+    /***************** franchisee page **************/
+
+    /* 성공요인 */
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 2rem;
+    }
+
+    .sec1_text_box .sec1_text2 {
+        font-size: 1rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 2rem;
+    }
+
+    .sec2_text_box .sec2_text2,
+    .success_area_2 .sec2_text_box > p {
+        font-size: 1rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 2rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text2,
+    .sec3_text_inbox2 .sec3_text4 {
+        font-size: 1rem;
+    }
+
+    .success_area_2_area .success_img2 > img {
+        width: 80%;
+    }
+
+    .success_area_1 .success_img1 > img {
+        width: 90%;
+    }
+
+    /* 개설 조건 */
+    .condition_list .condition_list_title {
+        font-size: 1.4rem;
+    }
+
+    .condition_list li {
+        font-size: .9rem;
+    }
+
 }
 
 @media only screen and (max-width: 1080px) {
@@ -423,7 +469,6 @@
         width: 73px;
     }
 
-<<<<<<< HEAD
     /* 버거배너 */
     .menu_ban_burger_img1 {
         width: 40%;
@@ -441,16 +486,6 @@
             right: 8%;
             opacity: 1;
         }
-=======
-    .menu_ban_burger_img1 {
-        width: 450px;
-        top: 50%;
-    }
-
-    .menu_ban_burger_img2 {
-        width: 300px; 
-        top: 25%;
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
     }
 
     .menu_banner_text h2 {
@@ -461,7 +496,6 @@
         font-size: 1rem;
     }
 
-<<<<<<< HEAD
     .menu_ban_list {
         margin-top: 0%;
         height: 65vmin;
@@ -518,10 +552,13 @@
         }
     }
 
+    /************* franchisee page ************/
+    .franchisee_top .franchisee_banner_box {
+        height: 85vmin;
+        margin: 0 0 10%;
+    }
 
 
-=======
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
 }
 
 @media only screen and (max-width: 1024px) {
@@ -568,6 +605,30 @@
             opacity: 1;
         }
     }
+
+    /***************** franchisee page **************/
+
+    .com_guid {
+        font-size: .89rem;
+    }
+
+    /* 성공요인 */
+    .success_area_1 .sec1_text_box {
+        width: 42%;
+    }
+
+    .success_area_1 .sec1_img_back {
+        height: 450px;
+    }
+
+    .success_area_2_area {
+        margin-top: 5%;
+    }
+
+    /* 개설조건 */
+    .condition_list_area .condition_list_box > li img {
+        margin: 10% 10% 0 0;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -603,6 +664,59 @@
     .menu_banner_text p {
         font-size: .97rem;
     }
+
+    /***************** franchisee page **************/
+
+    /* 성공요인 */
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.9rem;
+    }
+
+    .sec1_text_box .sec1_text2 {
+        font-size: .95rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.9rem;
+    }
+
+    .sec2_text_box .sec2_text2,
+    .success_area_2 .sec2_text_box > p {
+        font-size: .95rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.9rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text2,
+    .sec3_text_inbox2 .sec3_text4 {
+        font-size: .95rem;
+    }
+
+    .break {
+        display: block;
+    }
+
+    .sec2_text_box .sec2_text2 br {
+        display: none;
+    }
+
+    .sec3_text_box .sec3_text_inbox2 {
+        padding: 0 0 0 5%;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div {
+        font-size: 1.15rem;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > h2 {
+        font-size: 1.8rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -721,6 +835,161 @@
             opacity: 1;
         }
     }
+
+    /***************** franchisee page **************/
+
+    .break_banner {
+        display: block;
+        line-height: 2;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div br {
+        display: none;
+    }
+
+    /* 성공요인 */
+    .success_area_1 .sec1_text_box {
+        width: 50%;
+    }
+
+    .success_area_2 .sec2_text_box {
+        width: 45%;
+        padding-top: 5%;
+    }
+
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.8rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.8rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.8rem;
+    }
+
+    .success_box .success_area_3 {
+        margin-top: 5%;
+    }
+
+    .sec3_text_box .sec3_text_inbox1 {
+        padding-top: 0;
+    }
+
+    .success_area_4 .sec3_img > img {
+        width: 60%;
+    }
+
+    .success_area_4 .go_btn {
+        width: 190px;
+        height: 45px;
+        margin-left: 8%;
+        font-size: .9rem;
+        line-height: 45px;
+        transform: translateY(-50%);
+    }
+
+    /* 개설 조건 */
+    .condition_wrap .condition_list_area {
+        height: auto;
+    }
+
+    .condition_list_area .condition_list_box {
+        display: block;
+        position: relative;
+        padding: 7% 0;
+        width: auto;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .condition_list_area .condition_list_box > li {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .condition_list_area .condition_list_box > li img {
+        margin: 10% 15% 0 0;
+    }
+
+    .condition_list_area .condition_list_box > li:first-child {
+        margin: 0 auto 7%;
+    }
+
+    /* 개설 절차 */
+    .step_list_wrap1 .step_list_box,
+    .step_list_wrap2 .step_list_box {
+        width: 70%;
+        margin: 0 auto 15%;
+    }
+
+    .step_img .step_list_num {
+        position: absolute;
+        bottom: -35px;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        background-color: rgba(199, 6, 14, 0.6);
+        text-align: center;
+        color: #fff;
+    }
+
+    .step_list_text .step_text_title {
+        font-size: 1.5rem;
+    }
+
+    .step_list_text_area li {
+        font-size: 1.1rem;
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:not(:last-child) .step_img::after {
+        content: url(../images/step_arrow.png);
+        position: absolute;
+        transform: rotate(90deg) translate(20%, -50%);
+        top: -20%;
+        right: 50%;
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:last-child {
+        position: static;
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:last-child::after {
+        display: none;
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:first-child .step_img::after {
+        display: none;
+    }
+
+
+    .step_wrap .step_list_wrap1 > .step_list_box:last-child .step_img::after {
+        content: url(../images/step_arrow.png);
+        position: absolute;
+        transform: rotate(90deg) translate(20%, -50%);
+        top: -20%;
+        right: 50%;
+    }
+
+
+    .step_wrap .step_list_wrap2 > .step_list_box:first-child .step_img::after {
+        display: block;
+    }
+
+    .step_wrap .step_list_wrap2 > .step_list_box .step_img::after {
+        content: url(../images/step_arrow.png);
+        position: absolute;
+        transform: rotate(90deg) translate(20%, -50%);
+        top: -20%;
+        right: 50%;
+    }
+
 }
 
 @media only screen and (max-width: 840px) {
@@ -755,6 +1024,57 @@
         width: 25%;
         left: 5%;
     }
+
+    /***************** franchisee page **************/
+
+    article .com_main_title {
+        font-size: 1.8rem;
+    }
+
+    /* 성공요인 */
+
+    .success_area_1 .sec1_text_box {
+        width: 60%;
+    }
+
+    .success_area_1 .sec1_img_back {
+        height: 400px;
+    }
+
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.75rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.75rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.75rem;
+    }
+
+    .success_area_2 .sec2_text_box {
+        width: 50%;
+    }
+
+    .success_box .success_area_3 {
+        margin-top: 7%;
+    }
+
+    /* 개설 조건 */
+
+    .condition_list_area .condition_list_box > li {
+        width: 60%;
+    }
+
+    /* 투자 비용 */
+    .cost_list_area .cost_go_btn {
+        width: 200px;
+        font-size: .95rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -852,10 +1172,90 @@
             opacity: 1;
         }
     }
+
+    /************* franchisee page ***********/
+
+    /* 공통 */
+
+    .com_guid {
+        font-size: .85rem;
+    }
+
+    /* 배너 */
+
+    .franchisee_banner_box .franchisee_banner_text > h2 {
+        font-size: 1.75rem;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div {
+        font-size: 1.1rem;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list a {
+        font-size: 1rem;
+    }
+
+    /* 성공요인 */
+
+    .success_area_1 .sec1_text_box {
+        width: 70%;
+    }
+
+    .success_area_1 .sec1_img_back {
+        height: 350px;
+        width: 350px;
+    }
+
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.7rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.7rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.7rem;
+    }
+
+    .sec1_text_box .sec1_text2 {
+        font-size: 0.91rem;
+    }
+
+    .sec2_text_box .sec2_text2,
+    .success_area_2 .sec2_text_box > p {
+        font-size: .91rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text2,
+    .sec3_text_inbox2 .sec3_text4 {
+        font-size: .91rem;
+    }
+
+    .success_area_2 .sec2_text_box {
+        width: 60%;
+    }
+
+    .success_area_3 .success_img_3 {
+        width: 45%;
+    }
+
+    /* 개설조건 */
+
+    .condition_list_area .condition_list_box > li {
+        width: 65%;
+    }
+
+    .condition_list_area .condition_list_box > li img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
-
 @media only screen and (max-width: 680px) {
+
 
     /*********  memu page  *************/
 
@@ -901,9 +1301,120 @@
         width: 26%;
         left: 3%;
     }
+
+
+    /***************** franchisee page **************/
+
+    /* 공통 */
+    #franchisee_wrap .topbtn {
+        width: 60px;
+        height: 60px;
+    }
+
+    #franchisee_wrap .topbtn img {
+        height: 35px;
+    }
+
+    .break_sec3 {
+        display: block;
+    }
+
+    /* 성공 요인 */
+
+    .success_area_1 .sec1_img_back {
+        height: 300px;
+    }
+
+    .success_area_1 .success_img1 > img {
+        width: 93%;
+        margin-top: 3%;
+    }
+
+    .success_area_1 .sec1_text_box {
+        width: 95%;
+    }
+
+    .success_area_2 .sec2_text_box {
+        width: 84%;
+    }
+
+    .success_area_2_area .success_img2 > img {
+        width: 80%;
+    }
+
+    .success_area_3 .success_img_3 {
+        width: 53%;
+    }
+
+    .sec3_text_box .sec3_text_inbox1 {
+        padding-top: 18%;
+    }
+
+    .sec3_text_box .sec3_text_inbox2 {
+        padding: 5% 0;
+    }
+
+    .success_area_4 .go_btn {
+        margin-left: 0;
+    }
+
+    .success_box .success_area_4 {
+        margin-top: 0;
+    }
+
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.6rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.6rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.6rem;
+    }
+
+    .sec1_text_box .sec1_text2 {
+        font-size: 0.9rem;
+    }
+
+    .sec2_text_box .sec2_text2,
+    .success_area_2 .sec2_text_box > p {
+        font-size: .9rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text2,
+    .sec3_text_inbox2 .sec3_text4 {
+        font-size: .9rem;
+    }
+
+    /* 개설 조건 */
+
+    .condition_list_area .condition_list_box > li {
+        width: 70%;
+    }
+
+    /* 개설 절차 */
+    .step_list_text .step_text_title {
+        font-size: 1.3rem;
+    }
+
+    .step_list_text_area li {
+        font-size: .9rem;
+    }
+
+    .step_img .step_list_num {
+        bottom: -31px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
 }
 
-@media only screen and (max-width: 607px) {
+@media only screen and (max-width: 608px) {
 
     /********* main page ***************/
     .logo {
@@ -937,10 +1448,121 @@
             opacity: 1;
         }
     }
+
+    /*********** franchisee page ***********/
+
+    /* 배너 */
+    .franchisee_banner_box .franchisee_banner_text {
+        top: 40%;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list {
+        bottom: 35%;
+    }
+
+    /* 성공요인 */
+    .success_box .success_area_1 {
+        display: block;
+    }
+
+    .success_area_1 .sec1_text_box {
+        overflow: hidden;
+    }
+
+    .sec1_text_box .sec1_text3 {
+        float: left;
+        margin-top: 0%;
+    }
+
+    .success_box .success_area_2 {
+        margin-top: 15%;
+    }
+
+    .sec1_text_box .sec1_text2 {
+        padding-bottom: 3%;
+    }
+
+    .success_area_2_area .sec2_text_box {
+        order: 2;
+        transform: translateY(15px);
+        text-align: left;
+        position: absolute;
+        background-color: rgba(249, 249, 249, 0.52);
+        z-index: 1;
+        width: 48%;
+        padding: 10px;
+        margin-top: 24%;
+    }
+
+    .sec2_text1,
+    .sec3_text3 {
+        padding-bottom: 20%;
+    }
+
+    .success_area_2_area .success_img2 > img {
+        margin-top: 0;
+    }
+
+    .success_area_3 .success_img_3 {
+        float: none;
+        width: 75%;
+        margin-top: 40%;
+    }
+
+    .success_box .success_area_3 {
+        position: relative;
+        margin-top: 15%;
+    }
+
+    .sec3_text_box .sec3_text_inbox1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 0;
+    }
+
+    .sec3_text_box .sec3_text_inbox2 {
+        float: none;
+        text-align: right;
+        margin-top: 15%;
+    }
+
+    .success_area_4 .sec3_img > img {
+        float: none;
+        width: 100%;
+    }
+
+
+    .success_area_4 .go_btn {
+        margin: 20% auto;
+        position: relative;
+    }
+
+    /* 개설 조건 */
+
+    .condition_list_area .condition_list_box > li {
+        width: 75%;
+    }
+
+    /* 투자비용 */
+
+    .cost_list_wrap .cost_list_text,
+    .cost_list_wrap .cost_list_top {
+        font-size: .85rem;
+    }
+
+    .cost_list_area table tr th {
+        font-size: 1.15rem;
+    }
+
+    .cost_list_area table tr td {
+        font-size: .9rem;
+    }
+
 }
 
 @media only screen and (max-width: 590px) {
-    /*********  memu page  *************/
+    /*********  memu page  ************/
 
     .burger_img {
         width: 158px;
@@ -960,10 +1582,82 @@
         font-size: .89rem;
     }
 
+    /*********** franchisee page ***********/
+
+    /* 배너 */
+
+    .franchisee_top .franchisee_banner_box {
+        position: relative;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text {
+        top: 50%;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list {
+        bottom: 0;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div br {
+        display: block;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li {
+        width: 50%;
+        border-bottom: 0;
+        padding: 1.1em 0;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list {
+        width: 100%;
+        border: 2px solid #fff;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(3),
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(4) {
+        border-top: 2px solid #fff;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li:first-child,
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(3) {
+        border-right: 2px solid #fff;
+    }
+
+    .franchisee_menu_list .franchisee_click {
+        border: none;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list li:hover {
+        background-color: #fff;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li a {
+        display: block;
+    }
+
+    /* 성공요인 */
+
+    .success_area_2_area .sec2_text_box {
+        width: 55%;
+    }
+
+    /* 개설 절차 */
+    .step_list_wrap1 .step_list_box,
+    .step_list_wrap2 .step_list_box {
+        width: 80%;
+        margin: 0 auto 15%;
+    }
+
 
 }
 
 @media only screen and (max-width: 508px) {
+
+    /* 공통 */
+    .com_title {
+        font-size: 1rem;
+    }
+
     /*********  memu page  *************/
 
     #menu_list_wrap {
@@ -1035,7 +1729,48 @@
             opacity: 1;
         }
     }
+
+    /*********** franchisee page ***********/
+
+    /* 배너 */
+    .franchisee_banner_box .franchisee_menu_list > li {
+        padding: 1em 0;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > h2 {
+        font-size: 1.65rem;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div {
+        font-size: 1rem;
+    }
+
+    /* 성공요인 */
+
+    .success_area_1 .sec1_img_back {
+        top: 5%;
+    }
+
+    .success_area_2_area .sec2_text_box {
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .success_area_3 .success_img_3 {
+        margin-top: 50%;
+    }
+
+    .success_area_3 .sec3_img {
+        margin-top: 8%;
+    }
+
+    /* 개설 조건 */
+    .condition_list_area .condition_list_box > li {
+        width: 90%;
+    }
+
 }
+
 
 @media only screen and (max-width: 481px) {
 
@@ -1084,6 +1819,7 @@
     .menu_list > li img {
         width: 53px;
     }
+
 
 }
 
@@ -1201,18 +1937,90 @@
         animation: none;
     }
 
+    /*********** franchisee page ***********/
+
+    /* 배너 */
+    .franchisee_banner_box .franchisee_banner_text > h2 {
+        font-size: 1.3rem;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li {
+        padding: 0.78em 0;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list {
+        border: 1px solid #fff;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li:first-child,
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(3) {
+        border-right: 1px solid #fff;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(3),
+    .franchisee_banner_box .franchisee_menu_list > li:nth-child(4) {
+        border-top: 1px solid #fff;
+    }
+
+    /* 성공 요인 */
+
+    .success_area_1 .sec1_img_back {
+        top: 0%;
+    }
+
+    .success_area_2_area .sec2_text_box {
+        width: 73%;
+    }
+
+    .success_area_3 .success_img_3 {
+        margin-top: 60%;
+    }
+
+    /* 개설 조건 */
+    .condition_list_area .condition_list_box > li {
+        display: block;
+        text-align: center;
+    }
+
+    .condition_list_area .condition_list_box > li img {
+        margin: 10% auto;
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:not(:last-child) .step_img::after {
+        content: url(../images/step_arrow2.png);
+    }
+
+    .step_wrap .step_list_wrap1 > .step_list_box:last-child .step_img::after {
+        content: url(../images/step_arrow2.png);
+    }
+
+    .step_wrap .step_list_wrap2 > .step_list_box .step_img::after {
+        content: url(../images/step_arrow2.png);
+    }
+
+    /* 투자비용 */
+    .cost_list_area .cost_go_btn {
+        width: 180px;
+        font-size: .9rem;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .cost_list_wrap .cost_list_text,
+    .cost_list_wrap .cost_list_top {
+        font-size: .75rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 375px) {
 
 
-<<<<<<< HEAD
     .logo {
         width: 100px;
     }
 
-=======
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
     /*********  memu page  *************/
 
     .burger_img {
@@ -1237,12 +2045,111 @@
         font-size: .5rem;
     }
 
-<<<<<<< HEAD
     .menu_banner_text h2 {
         font-size: 2.5rem;
     }
 
-=======
->>>>>>> 6f5bc01431e22e27bbb7a340e274bd780c99fff8
+    /*********** franchisee page ***********/
+    /* 공통 */
+    .com_guid {
+        font-size: .8rem;
+    }
+
+    .com_title {
+        font-size: .9rem;
+    }
+
+    #franchisee_wrap .com_main_title {
+        font-size: 1.6rem;
+        margin: 15% 0;
+    }
+
+    #franchisee_wrap .topbtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #franchisee_wrap .topbtn img {
+        height: 30px;
+    }
+
+    /* 배너 */
+
+    .franchisee_banner_box .franchisee_banner_text > h2 {
+        font-size: 1.3rem;
+    }
+
+    .franchisee_banner_box .franchisee_banner_text > div {
+        font-size: .98rem;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list a {
+        font-size: .98rem;
+    }
+
+    .franchisee_banner_box .franchisee_menu_list > li {
+        padding: 0.55em 0;
+    }
+
+    /* 성공 요인*/
+
+    .success_area_1 .sec1_img_back {
+        height: 250px;
+        width: 250px;
+    }
+
+    .success_area_2_area .sec2_text_box {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .sec1_text_box .sec1_text1,
+    .sec1_text_box .sec1_text3 {
+        font-size: 1.5rem;
+    }
+
+    .sec2_text_box .sec2_text1 {
+        font-size: 1.5rem;
+    }
+
+    .sec3_text_inbox1 .sec3_text1,
+    .sec3_text_inbox2 .sec3_text3 {
+        font-size: 1.5rem;
+    }
+
+    /* 개설 조건 */
+
+    .condition_list .condition_list_title {
+        font-size: 1.3rem;
+    }
+
+    .condition_list_area .condition_list_box > li img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .condition_list_area .condition_list_box > li img {
+        margin: 8% auto;
+    }
+
+    /* 개설 절차 */
+
+    .step_img .step_list_num {
+        width: 50px;
+        height: 50px;
+        left: 6%;
+        bottom: -19px;
+        font-size: .9rem;
+        line-height: 50px;
+    }
+
+
+    /* 투자 비용 */
+    .break_table {
+        display: block;
+        line-height: 1.5;
+        padding-bottom: 5%;
+    }
+
 
 }
