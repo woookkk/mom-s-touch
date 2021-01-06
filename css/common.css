@@ -88,9 +88,10 @@
     position: absolute;
     width: 50px;
     height: 35px;
-    top: 15%;
+    top: 20%;
     right: 5%;
     display: none;
+    z-index: 99;
 }
 
 .hammenu span {
@@ -119,8 +120,8 @@
 }
 
 .hammenu.active span:nth-of-type(1) {
-    -webkit-transform: translateY(20px) rotate(-45deg);
-    transform: translateY(20px) rotate(-45deg);
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
 }
 
 .hammenu.active span:nth-of-type(2) {
@@ -131,6 +132,39 @@
 .hammenu.active span:nth-of-type(3) {
     opacity: 0;
 }
+
+/* 햄버거 클릭시 gnb */
+.outer_menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
+}
+.mq_gnb_wrap{
+    position: absolute;
+    width: 45%;
+    background-color: #eb2f37e3;
+    right: 0;
+    height: 100vh;
+}
+.mq_gnb_box{ 
+    padding: 30% 10%;
+}
+.mq_gnb_box li{
+    line-height: 1.5;
+}
+.mq_gnb_box li a{
+    font-size: 3rem;
+    transition: all .5s
+}
+.mq_gnb_box li:hover a{
+    color: #fff;
+}
+
+
+
 
 /****** article 공통 class *******/
 .com_wrap {
@@ -170,6 +204,7 @@
 /*************** 푸터 영역 ********************/
 footer {
     background-color: #222;
+    overflow: hidden;
 /*    height: 30vmin;*/
 }
 .footer_wrap{

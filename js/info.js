@@ -1,10 +1,10 @@
 $(function () { ///////// jQB ///////////
     //console.log("로딩완료");
 
-    
-    
-    
-    
+
+
+
+
     var ftop = $(".info_icon_box").offset().top;
     //////// 스크롤 이벤트 설정하기 //////////
     $(window).scroll(function () {
@@ -13,7 +13,7 @@ $(function () { ///////// jQB ///////////
         console.log("현재스크롤바위치: " + cTop);
         console.log(ftop);
 
-        if (cTop > ftop - 800 && cTop < ftop - 300) {
+        if (cTop > ftop - 850 && cTop < ftop - 100) {
             $(".info_icon_list").addClass("active");
         } else {
 
@@ -23,6 +23,24 @@ $(function () { ///////// jQB ///////////
     }); ////////////// scroll ////////////////
 
 
+    /* 모바일 스크롤 */
+    if ($(window).width() < 541) {
+        var ftop = $(".info_icon_box").offset().top;
+        //////// 스크롤 이벤트 설정하기 //////////
+        $(window).scroll(function () {
+            //현재 window의 스크롤바 위치(세로 스크롤)
+            var cTop = $(this).scrollTop();
+            console.log("현재스크롤바위치: " + cTop);
+            console.log(ftop);
+
+            if (cTop > ftop - 850 && cTop < ftop - 100) {
+                $(".info_icon_list").addClass("active");
+            } else {
+
+                $(".info_icon_list").addClass("active");
+            }
+        }); ////////////// scroll ////////////////
+    }///////////////// 모바일 ////////////////////////
 
 
 
@@ -42,19 +60,3 @@ $(function () { ///////// jQB ///////////
 
 
 }); ///////////////// jQB /////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

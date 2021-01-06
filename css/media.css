@@ -552,6 +552,21 @@
         }
     }
 
+    /******************info page*****************/
+    #info_wrap {
+        font-size: 15px;
+    }
+
+    #info_ban .info_ban_text {
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .info_map_wrap .info_map_area {
+        top: 43%;
+    }
+
+
     /************* franchisee page ************/
     .franchisee_top .franchisee_banner_box {
         height: 85vmin;
@@ -561,7 +576,8 @@
 
 }
 
-@media only screen and (max-width: 1024px) {
+/* 아이패드 프로 */
+@media only screen and (max-width: 1025px) {
 
     /********* main page ***************/
     .logo {
@@ -570,6 +586,18 @@
 
     .hammenu {
         width: 45px;
+    }
+
+    .main_ban_text1 {
+        font-size: 3.5rem;
+    }
+
+    .main_ban_text2 {
+        font-size: 2rem;
+    }
+
+    .main_ban_text3 {
+        font-size: 1.2rem;
     }
 
     /*********  memu page  *************/
@@ -604,6 +632,96 @@
             right: 6%;
             opacity: 1;
         }
+    }
+
+    .menu_banner_text h2 {
+        font-size: 5.8rem;
+    }
+
+    .menu_banner_text p {
+        font-size: 1.5rem;
+    }
+
+    /* 메뉴 클릭 */
+    .menu_detail .menu_price {
+        font-size: .93rem;
+    }
+
+    .break_B {
+        display: block;
+    }
+
+    .break_B + br {
+        display: none;
+    }
+
+    .menu_detail .menu_info_text {
+        padding: 10% 0;
+        font-size: .83rem;
+    }
+
+    .menu_detail {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 86%;
+    }
+
+    /***************** info page ****************/
+    #info_wrap #info_ban {
+        height: 45vmin;
+        margin-top: 0;
+        background: url(../images/info_banner2.png) no-repeat center -20%;
+        background-attachment: fixed;
+    }
+
+    .info_greetings_wrap .info_greetings_text {
+        padding-top: 10%;
+        line-height: 1.5;
+    }
+
+    .info_greetings_wrap .info_greetings_text h3 {
+        font-size: 2rem;
+    }
+
+    .info_greetings_wrap .go_btn {
+        margin: 7% auto;
+    }
+
+    #info_wrap .info_map_wrap {
+        height: 70vh;
+    }
+
+    .info_map_wrap .info_map_area {
+        transform: translate(-50%, -70%);
+    }
+
+    .info_map_area .info_map_tit {
+        margin-bottom: 7%;
+    }
+
+    .info_map_area .info_map_wrap h3 {
+        padding-right: 0;
+    }
+
+    .info_map_area .info_map_tit span {
+        display: block;
+        padding-top: 3%;
+        font-size: 2.5rem;
+    }
+
+    .info_map_area .info_map_text {
+        width: 60%;
+        transform: translateY(100%);
+        margin: 0 auto;
+    }
+
+    .info_map_area .info_map_view {
+        width: 55%;
+        top: 0;
+        transform: translatex(-50%);
+        left: 50%;
     }
 
     /***************** franchisee page **************/
@@ -1078,6 +1196,7 @@
 
 }
 
+/* ipad */
 @media only screen and (max-width: 768px) {
 
     /********* main page ***************/
@@ -1174,6 +1293,29 @@
         }
     }
 
+    /**************** info page ****************/
+    #info_ban .info_ban_text h2 {
+        font-size: 2rem;
+    }
+
+    .info_greetings_wrap .info_greetings_text h2 {
+        font-size: 2rem;
+    }
+
+    .info_greetings_wrap .greetings_text1 {
+        font-size: 1.46rem;
+    }
+
+    #info_wrap #info_ban {
+        height: 50vmin;
+        background: url(../images/info_banner2.png) no-repeat center -60%;
+        background-attachment: fixed;
+    }
+
+    .info_icon_list .break_info_icon {
+        display: block;
+    }
+
     /************* franchisee page ***********/
 
     /* 공통 */
@@ -1256,6 +1398,11 @@
 }
 
 @media only screen and (max-width: 680px) {
+
+    /********* common **************/
+    .footer_sns {
+        width: 20%;
+    }
 
 
     /*********  memu page  *************/
@@ -1433,6 +1580,11 @@
 
     .hammenu span:nth-of-type(2) {
         top: 13px;
+    }
+
+    .hammenu.active span:nth-of-type(1) {
+        -webkit-transform: translateY(13px) rotate(-45deg);
+        transform: translateY(13px) rotate(-45deg);
     }
 
     /*********  memu page  *************/
@@ -1652,7 +1804,153 @@
 
 }
 
+/* Surface Duo*/
+@media only screen and (max-width: 540px) {
+    /*************** info page ******************/
+
+    #info_wrap #info_ban {
+        position: relative;
+        height: 120vh;
+        background: url(../images/info_banner2.png) no-repeat center/cover;
+        background-attachment: fixed;
+    }
+
+    #info_ban .info_ban_text {
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+    }
+
+    #info_ban .info_ban_text h2 {
+        font-size: 1.59rem;
+    }
+
+    #info_ban .info_ban_text span {
+        font-size: 1.4rem;
+    }
+
+    /* 모바일 버전 */
+    .info_ban_line::after {
+        content: "";
+        position: absolute;
+        top: 170%;
+        left: 50%;
+        width: 1px;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    .info_greetings_box {
+        position: absolute;
+        width: 100%;
+        bottom: -15%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+    }
+
+    .info_greetings_wrap .info_greetings_text {
+        padding: 10% 0 5%;
+    }
+
+    .info_greetings_wrap .info_greetings_text h3 {
+        padding-bottom: 5%;
+        text-shadow: 0 0 1px #fff;
+    }
+
+    .info_greetings_wrap .greetings_text1 {
+        font-size: 1.35rem;
+        padding-bottom: 5%;
+    }
+
+    .info_greetings_box .break_info_G {
+        display: block;
+    }
+
+    .go_btn::before,
+    .go_btn::after,
+    .go_btn a::before,
+    .go_btn a::after {
+        display: none;
+    }
+
+    .go_btn {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .info_greetings_box .go_btn a {
+        color: #000;
+        font-size: 1rem;
+    }
+
+    /* 아이콘 */
+    .info_greetings_wrap .info_icon_box {
+        height: 200vh;
+    }
+
+    .info_greetings_wrap .info_icon_list {
+        display: block;
+    }
+
+    .info_greetings_wrap .info_icon_list li {
+        width: 100%;
+    }
+
+    .info_greetings_wrap .info_icon_list li:not(:last-child) {
+        padding-bottom: 25%;
+        border-right: 0;
+    }
+
+    .info_greetings_wrap .info_icon_list li h3 {
+        font-size: 1.7rem;
+    }
+
+    .info_greetings_wrap .info_icon_list li span {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .info_icon_list .break_info_icon {
+        display: inline-block;
+    }
+
+    .info_icon_line::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 30px;
+        margin: 0 auto 10%;
+        background-color: rgba(199, 6, 14, 0.8);
+    }
+
+    /* 지도 */
+
+    #info_wrap .info_map_wrap {
+        height: 100vh;
+    }
+
+    .info_map_area .info_map_view {
+        width: 80%;
+    }
+
+    .info_map_area .info_map_text {
+        width: 85%;
+    }
+
+    .info_map_area .info_map_tit span {
+        font-size: 1.7rem;
+        padding-bottom: 4%;
+    }
+}
+
 @media only screen and (max-width: 508px) {
+
+    /********* common **************/
+    .footer_sns {
+        width: 30%;
+    }
 
     /* 공통 */
     .com_title {
@@ -1789,6 +2087,11 @@
         top: 10.5px;
     }
 
+    .hammenu.active span:nth-of-type(1) {
+        -webkit-transform: translateY(11px) rotate(-45deg);
+        transform: translateY(11px) rotate(-45deg);
+    }
+
     .main_ban_text2 {
         font-size: 1.19rem;
     }
@@ -1825,6 +2128,12 @@
 }
 
 @media only screen and (max-width: 420px) {
+
+    /********* common **************/
+    .footer_sns {
+        width: 35%;
+    }
+
     /********* main page ***************/
 
     .main_ban_text2 {

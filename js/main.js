@@ -133,6 +133,15 @@ $(function () { //////// jQB////////
         });/// css //////
         
     }); //////// mouseenter /////////////
+    
+    $(".search_box").click(function(){
+        $(this).css({
+            boxShadow: "none",
+            width: "250px"
+        });/// css //////
+        
+    }); //////// click /////////////
+    
 
 
 }) /////////////// jQB /////////////////////////

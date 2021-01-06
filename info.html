@@ -9,6 +9,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/info.js"></script>
 </head>
 
@@ -23,51 +24,69 @@
                 <!-- gnb 영역 -->
                 <nav id="gnb">
                     <ul class="gnb_box">
+                        <li><a href="main.html"><span data-hover="맘스터치">맘스터치</span></a></li>
                         <li><a href="menu.html"><span data-hover="메뉴">메뉴</span></a></li>
-                        <li><a href=""><span data-hover="매장찾기">매장찾기</span></a></li>
                         <li><a href="info.html"><span data-hover="회사소개">회사소개</span></a></li>
                         <li><a href="franchisee.html"><span data-hover="가맹문의">가맹문의</span></a></li>
                     </ul>
                 </nav>
+                <!-- 햄버거 메뉴 -->
+                <a href="#" class="hammenu">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </a>
+                <div class="outer_menu">
+                    <div class="mq_gnb_wrap">
+                        <ul class="mq_gnb_box">
+                            <li><a href="main.html">HOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="info.html">INFORMATION</a></li>
+                            <li><a href="franchisee.html">FRANCHISE</a></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
         </div>
         <!-- 배너 -->
         <div id="info_ban">
             <span class="bld">배너</span>
-            <div class="info_ban_text">
+            <div class="info_ban_text info_ban_line">
                 <h2>COMPANY &nbsp; INFORMATION</h2>
                 <span> 회사소개 </span>
             </div>
         </div>
         <!-- 인사말 -->
         <div class="info_greetings_wrap">
-            <div class="info_greetings_text">
-                <h3>"A better tomorrow"</h3>
-                <div class="greetings_text1">해마로푸드서비스(주)는 더 나은 내일을 향해 도약 합니다.</div>
-                <div class="greetings_text2 type-wrap">
-                    <span id="typed6" style="white-space:pre;"></span>
+            <div class="info_greetings_box">
+                <div class="info_greetings_text">
+                    <h3>"A better tomorrow"</h3>
+                    <div class="greetings_text1">해마로푸드서비스(주)는 <span class="break_info_G">더 나은 내일을 향해 도약 합니다.</span></div>
+                    <div class="greetings_text2 type-wrap">
+                        <span id="typed6" style="white-space:pre;"></span>
+                    </div>
                 </div>
+                <div class="go_btn"><a href="#">해마로푸드서비스 &nbsp; GO</a></div>
             </div>
-            <div class="go_btn"><a href="#">해마로푸드서비스 &nbsp; GO</a></div>
             <div class="info_icon_box active">
                 <ul class="info_icon_list">
-                    <li>
+                    <li class="info_icon_line">
                         <img src="images/info_logo1.png" alt="아이콘">
                         <h3>제품 경쟁력 확보</h3>
                         <span> 제품의 맛에 대한 기본을 <br>
-                            잘 지켜나가고 있는 것이 저희의 강점 입니다</span>
-                    </li>
-                    <li>
+                            잘 지켜나가고 있는 것이 <span class="break_info_icon">저희의 강점 입니다</span></span>
+                    </li >
+                    <li class="info_icon_line">
                         <img src="images/info_logo2_white.png" alt="아이콘">
                         <h3>새로운 생각 새로운 행동</h3>
                         <span>'맘스터치'는 비교 대신, <br>
                             오로지 자신의 의지와 행동을 추구합니다</span>
                     </li>
-                    <li>
+                    <li class="info_icon_line">
                         <img src="images/info_logo3_white.png" alt="아이콘">
                         <h3>역지사지 경영</h3>
                         <span>상대방의 시각과 처지에서 생각하고<br>
-                            의사결정을 하여 발전적인 방향으로 나아가는 것이<br>
+                            <span class="break_info_icon">의사결정을 하여 발전적인 방향으로</span> 나아가는 것이<br>
                             '맘스터치'의 경영철학 입니다</span>
                     </li>
                 </ul>
@@ -75,57 +94,41 @@
         </div>
         <!-- 지도 -->
         <div class="info_map_wrap">
-            <div class="info_map_tit">
-                <h3>MAP</h3>
-                <span>오시는 길</span>
-            </div>
-            <div class="info_map_box">
-                <ul class="info_map_text">
-                    <li class="info_map_text1">
-                        <img src="images/map_icon1.png" alt="주소아이콘">
-                        <h4>주소</h4>
-                        <div>서울특별시 강동구 천호대로 1077 이스트센트럴타워 </div>
-                    </li>
-                    <li class="info_map_text2">
-                        <img src="images/map_icon2.png" alt="전화아이콘">
-                        <h4>대표 전화</h4>
-                        <div>1661 - 4205 </div>
-                    </li>
-                    <li class="info_map_text3">
-                        <img src="images/map_icon3.png" alt="팩스아이콘">
-                        <h4>팩스</h4>
-                        <div>02 - 418 - 0279 </div>
-                    </li>
-                </ul>
+            <div class="info_map_area">
+                <div class="info_map_tit">
+                    <h3>MAP</h3>
+                    <span>오시는 길</span>
+                </div>
+                <div class="info_map_box">
+                    <ul class="info_map_text">
+                        <li class="info_map_text1">
+                            <img src="images/map_icon1.png" alt="주소아이콘">
+                            <h4>주소</h4>
+                            <div>서울특별시 강동구 천호대로 1077 이스트센트럴타워 </div>
+                        </li>
+                        <li class="info_map_text2">
+                            <img src="images/map_icon2.png" alt="전화아이콘">
+                            <h4>대표 전화</h4>
+                            <div>1661 - 4205 </div>
+                        </li>
+                        <li class="info_map_text3">
+                            <img src="images/map_icon3.png" alt="팩스아이콘">
+                            <h4>팩스</h4>
+                            <div>02 - 418 - 0279 </div>
+                        </li>
+                    </ul>
 
-                <!-- 지도 넣기 -->
-                <div class="info_map_view">
+                    <!-- 지도 넣기 -->
+                    <div class="info_map_view">
 
-                    <!-- * 카카오맵 - 지도퍼가기 -->
-                    <!-- 1. 지도 노드 -->
-                    <div id="daumRoughmapContainer1602559742194" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
-
-                    <!--
-                    2. 설치 스크립트
-                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
-                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                    <!-- 3. 실행 스크립트 -->
-                    <script charset="UTF-8">
-                        new daum.roughmap.Lander({
-                            "timestamp": "1602559742194",
-                            "key": "22f25",
-                            "mapHeight": "350"
-                        }).render();
-                    </script>
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8015362996653!2d127.13017151526897!3d37.536175379803645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caf1661f8aec3%3A0xae072cacfe478501!2z7J207Iqk7Yq47IS87Yq465-07YOA7JuMIEVhc3QgQ2VudHJhbCBUb3dlcg!5e0!3m2!1sko!2skr!4v1608019880829!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- 푸터 영역 -->
-            <footer>
+        <footer>
             <div class="footer_wrap">
                 <div class="footer_text">
                     <h3>MOM'S TOUCH</h3>
@@ -145,7 +148,7 @@
                         </li>
                     </ul>
                     <p>
-                    COPYRIGHT BY MOMS TOUCH ALL RIGHT RESERVED
+                        COPYRIGHT BY MOMS TOUCH ALL RIGHT RESERVED
                     </p>
                 </div>
 
@@ -155,4 +158,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
