@@ -84,7 +84,7 @@ $(function () { ////////////// jQB /////////////////////
 
 
 
-    // GNB a링크를 클릭하면 해당 페이지위치로 이동 애니메이션
+    // 해당 a링크를 클릭하면 해당 페이지위치로 이동 애니메이션
     // 이벤트 대상 : .franchisee_menu_list a
     $(".franchisee_menu_list a").click(function (e) {
         e.preventDefault();
@@ -254,13 +254,7 @@ $(function () { ////////////// jQB /////////////////////
                     })
             });
     };
-    /*
-
-        
-       if ($(window).width() < 608){
-          $('.success_area_2_area li').eq(0).attr("data-enllax-ratio","1").attr("data-enllax-type","background");
-        };
-    */
+    
 
 
 }); //////////////////// jQB /////////////////////////

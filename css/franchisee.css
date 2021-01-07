@@ -30,6 +30,7 @@ body {
 
 /****************헤더 배너 영역 ****************/
 .franchisee_banner_box {
+    position: relative;
     background: url(../images/franchisee_banner.png) no-repeat center/cover;
     box-shadow: 0 1px 5px grey;
     height: 80vmin;
@@ -65,7 +66,7 @@ body {
 
 .franchisee_menu_list {
     position: absolute;
-    bottom: 26%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

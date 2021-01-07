@@ -153,8 +153,10 @@
     padding: 30% 10%;
 }
 .mq_gnb_box li{
+    padding-right: 2%;
     line-height: 2;
     font-weight: bold;
+    transition: all .75s 0s ease;
 }
 .mq_gnb_box li a{
     font-size: 3rem;
@@ -180,8 +182,9 @@
 }
 
 .com_guid {
-    float: right;
+    padding-bottom: 3%;
     font-size: 1rem;
+    text-align: right;
 }
 
 .com_guid_img {

@@ -45,6 +45,7 @@ body {
 .menu_banner_text {
     position: absolute;
     text-align: center;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -54,7 +55,7 @@ body {
 .menu_banner_text h2 {
     font-family: 'Montserrat-SemiBoldItalic';
     font-size: 6rem;
-    padding-bottom: 12%;
+    padding-bottom: 5%;
     color: #fff;
 }
 

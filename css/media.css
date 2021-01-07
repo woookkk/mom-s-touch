@@ -569,7 +569,7 @@
 
     /************* franchisee page ************/
     .franchisee_top .franchisee_banner_box {
-        height: 85vmin;
+        height: 80vmin;
         margin: 0 0 10%;
     }
 
@@ -1215,9 +1215,10 @@
         padding-top: 10%;
     }
 
-    .break {
+    .break_main {
         display: block;
         line-height: 1.5;
+        white-space: nowrap;
     }
 
     .break1 {
@@ -1270,7 +1271,6 @@
 
     .menu_banner_text h2 {
         font-size: 4rem;
-        padding-bottom: 10%;
     }
 
     /* 치킨배너 */
@@ -1429,7 +1429,6 @@
 
     .menu_banner_text h2 {
         font-size: 3.6rem;
-        padding-bottom: 8%;
     }
 
     .menu_banner_text p {
@@ -1563,7 +1562,7 @@
 
     /********* main page ***************/
     .logo {
-        width: 130px;
+        width: 125px;
     }
 
     .hammenu {
@@ -1745,7 +1744,7 @@
     }
 
     .franchisee_banner_box .franchisee_menu_list {
-        bottom: 0;
+        bottom: 1px;
     }
 
     .franchisee_banner_box .franchisee_banner_text > div br {
@@ -2106,7 +2105,7 @@
     }
 
     .main_ban_text3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     /*********  memu page  *************/
@@ -2275,7 +2274,9 @@
         display: block;
         text-indent: 21%;
     }
-
+    .info_greetings_box .greetings_text2 span:first-child{
+        display: none;
+    }
 
     /*********** franchisee page ***********/
 
@@ -2394,6 +2395,10 @@
 
     .info_greetings_wrap .info_greetings_box {
         bottom: -14%;
+    }
+
+    .info_greetings_wrap .info_greetings_text h3 {
+        font-size: 2rem;
     }
 
     /*********** franchisee page ***********/

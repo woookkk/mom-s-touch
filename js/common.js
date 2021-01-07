@@ -33,7 +33,24 @@ $(function () { ////////////// jQB /////////////////////
          }, 800);
      });///////////// click //////
 
-
+    /* 햄버거 gnb 박스 */
+    
+     $(".mq_gnb_box li").mouseover(function () {
+        $(this).css({
+                transform: "translateX(-1vw)"
+            })
+            .siblings().find("a").css({
+                opacity: ".5"
+            });
+    });//////////// mouseover //////////////////
+    $(".mq_gnb_box li").mouseout(function () {
+        $(this).css({
+                transform: "translateX(0)"
+            })
+            .siblings().find("a").css({
+                opacity: "1"
+            });
+    });/////////////////mouseout /////////////
 
 
 
