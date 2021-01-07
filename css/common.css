@@ -88,8 +88,8 @@
     position: absolute;
     width: 50px;
     height: 35px;
-    top: 20%;
-    right: 5%;
+    top: 30%;
+    right: 6%;
     display: none;
     z-index: 99;
 }
@@ -144,7 +144,7 @@
 }
 .mq_gnb_wrap{
     position: absolute;
-    width: 45%;
+    width: 55%;
     background-color: #eb2f37e3;
     right: 0;
     height: 100vh;
@@ -153,7 +153,8 @@
     padding: 30% 10%;
 }
 .mq_gnb_box li{
-    line-height: 1.5;
+    line-height: 2;
+    font-weight: bold;
 }
 .mq_gnb_box li a{
     font-size: 3rem;
