@@ -325,6 +325,7 @@
             opacity: 1;
         }
     }
+    
 
     /***************** franchisee page **************/
 
@@ -657,13 +658,7 @@
         font-size: .83rem;
     }
 
-    .menu_detail {
-        position: fixed;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -30%);
-        width: 86%;
-    }
+   
 
     /***************** info page ****************/
     #info_wrap #info_ban {
@@ -2254,6 +2249,15 @@
     .menu_ban_drink.on .menu_ban_drink_img2 {
         animation: none;
     }
+    /*
+    
+     .menu_detail {
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 86%;
+    }*/
 
     /***************** info page **********************/
 
