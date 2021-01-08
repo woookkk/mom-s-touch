@@ -325,7 +325,7 @@
             opacity: 1;
         }
     }
-    
+
 
     /***************** franchisee page **************/
 
@@ -658,7 +658,7 @@
         font-size: .83rem;
     }
 
-   
+
 
     /***************** info page ****************/
     #info_wrap #info_ban {
@@ -1308,6 +1308,19 @@
         display: block;
     }
 
+    /* 지도 */
+
+    #info_wrap .info_map_wrap {
+        height: 100vh;
+    }
+
+    .info_map_box .break_map_add {
+        display: block;
+        text-indent: 18%;
+        line-height: 1.6;
+    }
+
+
     /************* franchisee page ***********/
 
     /* 공통 */
@@ -1396,6 +1409,11 @@
         width: 20%;
     }
 
+    .topbtn_D {
+        width: 60px;
+        height: 60px;
+        bottom: 2%;
+    }
 
     /*********  memu page  *************/
 
@@ -1901,7 +1919,7 @@
     }
 
     .info_greetings_wrap .info_icon_list li:not(:last-child) {
-        padding-bottom: 45%;
+        padding-bottom: 30%;
         border-right: 0;
     }
 
@@ -1930,7 +1948,7 @@
     /* 지도 */
 
     #info_wrap .info_map_wrap {
-        height: 100vh;
+        height: 120vh;
     }
 
     .info_map_area .info_map_view {
@@ -1944,6 +1962,14 @@
     .info_map_area .info_map_tit span {
         font-size: 1.1rem;
         padding-bottom: 4%;
+    }
+
+    .info_map_box .info_map_text li h4 {
+        font-size: 1.15rem;
+    }
+
+    .info_map_box .info_map_text li div {
+        font-size: 1rem;
     }
 }
 
@@ -2137,6 +2163,7 @@
         font-size: 1.6rem;
     }
 
+
     /********* main page ***************/
 
     .main_ban_text2 {
@@ -2249,17 +2276,22 @@
     .menu_ban_drink.on .menu_ban_drink_img2 {
         animation: none;
     }
-    /*
-    
-     .menu_detail {
+
+
+    .menu_detail {
         position: fixed;
+        width: 86%;
         top: 45%;
         left: 50%;
         transform: translate(-50%, -30%);
-        width: 86%;
-    }*/
+        z-index: 9999;
+    }
 
     /***************** info page **********************/
+
+    #info_wrap .info_map_wrap .topbtn_D {
+        bottom: 2%;
+    }
 
     .info_greetings_wrap .info_greetings_box {
         bottom: -10%;
@@ -2274,12 +2306,18 @@
         font-size: 1rem;
     }
 
-    .info_map_box .break_map_add {
-        display: block;
-        text-indent: 21%;
-    }
-    .info_greetings_box .greetings_text2 span:first-child{
+    .info_greetings_box .greetings_text2 span:first-child {
         display: none;
+    }
+
+    .info_greetings_wrap .info_icon_list li:not(:last-child) {
+        padding-bottom: 40%;
+    }
+
+    /* 지도 */
+
+    #info_wrap .info_map_wrap {
+        height: 110vh;
     }
 
     /*********** franchisee page ***********/
@@ -2367,6 +2405,12 @@
         font-size: 1.49rem;
     }
 
+    .topbtn_D {
+        width: 50px;
+        height: 50px;
+        padding-top: 6px;
+    }
+
     /*********  memu page  *************/
 
     .burger_img {
@@ -2397,6 +2441,11 @@
 
     /*************** info page ****************/
 
+
+    #info_wrap #info_ban {
+        height: 130vh;
+    }
+
     .info_greetings_wrap .info_greetings_box {
         bottom: -14%;
     }
@@ -2404,6 +2453,41 @@
     .info_greetings_wrap .info_greetings_text h3 {
         font-size: 2rem;
     }
+
+    .info_greetings_wrap .info_greetings_box {
+        bottom: -25%;
+    }
+
+    .info_greetings_wrap .info_icon_list li h3 {
+        font-size: 1.5rem;
+    }
+
+    .info_greetings_wrap .info_icon_list li span {
+        font-size: 1.05rem;
+    }
+
+    .info_greetings_wrap .info_icon_list li:not(:last-child) {
+        padding-bottom: 35%;
+    }
+
+    /* 지도 */
+
+    #info_wrap .info_map_wrap {
+        height: 125vh;
+    }
+
+    .info_map_box .info_map_text li h4 {
+        font-size: 1.1rem;
+    }
+
+    .info_map_box .info_map_text li div {
+        font-size: .96rem;
+    }
+
+    .info_map_box .break_map_add {
+        text-indent: 21%;
+    }
+
 
     /*********** franchisee page ***********/
     /* 공통 */

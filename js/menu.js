@@ -354,8 +354,11 @@ $(function () { ////////////// jQB /////////////////////
     // 따라서 함수로 만들어서 ~!!!
     var showDesc = function(){
         
-        $(".menu_click_box").click(function () {
+        var menuCB = $(".menu_click_box");
+        
+        menuCB.click(function () {
             $(this).next().show();
+            menuCB.not($(this)).next().hide();
         }); ////////// click /////////////
 
         $(".close_btn").click(function () {
@@ -381,12 +384,11 @@ $(function () { ////////////// jQB /////////////////////
 
 
     }); ///////////////// click /////////////
-/*
 
-    $("a").click(function (e) {
+    /*  메뉴리스트 클릭시 상단이동 금지 */
+    $(".menu_list li a").click(function (e) {
         e.preventDefault();
     });
-*/
 
 
     $(".menu_list li").click(function () {
@@ -425,25 +427,7 @@ $(function () { ////////////// jQB /////////////////////
         }, 10); /// animate ////
     }, 500); //// 타임아웃 ////////
     
-    
-   /* var lpno = $(".gnb_box li a").index();
-    var tg = lpno.this
-    
-     var link = [
-                "menu.html",
-                "",
-                "info.html",
-                "franchisee.html"
-            ];
-    
-            $(".gnb_box li a").click(function(){
-                
-                console.log(lpno+"번째");
-                
-                location.href = link[lpno];
-                
-            });*////////click ///////////
-
+  
 
 }); //////////////////// jQB /////////////////////////
 /////////////////////////////////////////////////////

@@ -29,7 +29,7 @@ $(function () { //////// jQB////////
             //슬라이드 순번 증가
             sno++;
             if (sno === scnt) sno = 0; //한계수(처음으로)
-            
+
         } /////////if ///////////////
         // 왼쪽 전달값이 0 이므로 false (else로 처리!)
         else if (dir === 0) {
@@ -66,7 +66,7 @@ $(function () { //////// jQB////////
 
         //4초 간격으로 슬라이드 함수 호출
         autoI = setInterval(function () {
-            goSlide(-1,1);
+            goSlide(-1, 1);
         }, 3000); ////// 인터발함수 //////
 
     }; ////////////////// autoCall 함수 ////////////////
@@ -95,17 +95,17 @@ $(function () { //////// jQB////////
     autoCall();
     chgbtn();
 
-    
+
     /// 블릿 클릭시 /////////////////
-    $("#slide_btn li").click(function(){
+    $("#slide_btn li").click(function () {
         var idx = $(this).index();
-        goSlide(idx,2);
+        goSlide(idx, 2);
         // 뒤 전달값은 0,1이 아닌값으로 보낸다!
-        
+
         // 자동넘김 지우기
         clearAuto();
-        
-    });////////// click ///////////////
+
+    }); ////////// click ///////////////
 
 
     /*///////////////////////////////////
@@ -119,29 +119,50 @@ $(function () { //////// jQB////////
             .siblings().removeClass("on");
 
     } ////////////////////////////////////// chgMenu 함수 /////////////////
-    
-    
-    $(".search_box").mouseenter(function(){
+
+
+    $(".search_box").hover(function () {
         $(this).css({
             boxShadow: "0px 0px .5px 1px #C7060E",
             width: "20%"
-        });/// css //////
-        
-        $(".search_txt",this).css({
+        }); /// css //////
+
+        $(".search_txt", this).css({
             padding: "0 6px",
             width: "240px"
-        });/// css //////
+        }); /// css //////
+
+    }, function () {
+        $(this).css({
+            padding: "10px",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "50px",
+            height: "50px",
+            backgroundColor: " #fff",
+            border: "1px solid #C7060E",
+            borderRadius: "30px",
+            transition: "0.4s",
+            overflow: "hidden"
+        }); /// css //////
         
+         $(".search_txt", this).css({
+            padding: "0",
+            width: "0"
+        }); /// css //////
+
     }); //////// mouseenter /////////////
-    
-    $(".search_box").click(function(){
+
+    $(".search_box").click(function () {
         $(this).css({
             boxShadow: "none",
             width: "250px"
-        });/// css //////
-        
+        }); /// css //////
+
     }); //////// click /////////////
-    
+
 
 
 }) /////////////// jQB /////////////////////////

@@ -266,7 +266,7 @@ body {
 .info_map_area {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -295,7 +295,7 @@ body {
 .info_map_text {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 55%;
     border: 1px solid #f8f8f8;
     padding: 5%;
     margin: 0 10%;
@@ -312,14 +312,27 @@ body {
     padding: 1% 10% 0 0;
 }
 
+.info_map_text li h4{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.info_map_text li div{
+    font-size: 1.1rem;
+}
+
+
 /* 지도 뷰 */
 .info_map_view {
     position: absolute;
-    width: 40%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 85%;
+    width: 50%;
+    top: 80%;
+    height: 90%;
     right: 10%;
+    transform: translateY(-50%);
+}
+.info_map_view iframe{
+    border-radius: 40px;
 }
 
 footer {
@@ -328,22 +341,6 @@ footer {
 
 /*********** 탑버튼 ***************/
 
-
-/*.info_topbtn {
-    position: absolute;
-    text-align: center;
-    padding-top: 12px;
-    top: 5%;
-    right: 5%;
-    width: 65px;
-    height:65px;
-    box-shadow: 0 0 4px grey;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 9999;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-}*/
-/*.topbtn img {
-    height: 40px;
-}*/
+.info_map_wrap .topbtn_D{
+    bottom: -15%;
+}

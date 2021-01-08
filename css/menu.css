@@ -20,6 +20,9 @@ body {
     color: #222;
 }
 
+.menu_area{
+    position: relative;
+}
 /************** 배너 *************/
 
 
@@ -55,7 +58,7 @@ body {
 .menu_banner_text h2 {
     font-family: 'Montserrat-SemiBoldItalic';
     font-size: 6rem;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     color: #fff;
 }
 
@@ -63,6 +66,7 @@ body {
     font-size: 1.35rem;
     line-height: 1.5;
     color: #fff;
+    text-shadow: 0 0 2px #4a473c;
 }
 
 
@@ -255,7 +259,10 @@ body {
     /*맨위로 오게*/
 }
 
-
+/* 탑 버튼 부모 */
+.menu_area{
+    position: relative;
+}
 /************ 클릭 메뉴 *************/
 
 #menu_list_wrap {
@@ -396,7 +403,7 @@ body {
     color: #000;
     text-align: center;
     cursor: pointer;
-    padding: 5% 0;
+    padding: 5% 0 10%;
 }
 
 .add_menu span {
@@ -412,7 +419,7 @@ body {
 .add_menu span::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     width: 110px;
     height: 110px;
