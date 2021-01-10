@@ -50,14 +50,17 @@
 
 /*공통*/
 body {
-    width: 1920px;
-    max-width: 100%;
-    margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 136%;
     font-size: 1rem;
     color: #222;
     overflow-x: hidden;
+}
+
+.core{
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
