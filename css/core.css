@@ -50,8 +50,8 @@
 
 /*공통*/
 body {
-    max-width: 1920px;
-    width: 100%;
+    width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 136%;

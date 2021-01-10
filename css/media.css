@@ -1220,7 +1220,7 @@
         display: block;
         color: #C7060E;
         font-weight: bold;
-        text-shadow: none;
+        text-shadow: 0 0 1px #fff;
     }
 
     .main_ban_box {
@@ -1649,7 +1649,7 @@
         transform: translateY(15px);
         text-align: left;
         position: absolute;
-        background-color: rgba(249, 249, 249, 0.52);
+        background-color: rgba(249, 249, 249, 0.85);
         z-index: 1;
         width: 48%;
         padding: 10px;
@@ -1875,7 +1875,7 @@
 
     .info_greetings_wrap .info_greetings_text h3 {
         padding-bottom: 5%;
-        text-shadow: 0 0 1px #fff;
+        text-shadow: 0 0 2px #fff;
     }
 
     .info_greetings_wrap .greetings_text1 {

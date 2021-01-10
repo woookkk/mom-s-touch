@@ -7,8 +7,8 @@ $(function () { ////////////// jQB /////////////////////
     var Emtitle = {
         "burger": [
       "Nashville Hot Chicken Burger",
-        "Jalapeno Pain Burger",
-        "Salsaiko Burger",
+        "Jalapeno whole Burger",
+        "Salsarico Burger",
         "Unbelievable Burger",
         "Incredible Burger",
         "Cheese Bacon Burger",
@@ -56,7 +56,7 @@ $(function () { ////////////// jQB /////////////////////
         'Sweet Potato Cheese Ball'
     ],
         "drink": [
-        'Cola',
+        'Coke',
         'Hot chocolate',
         'Lemon Black Tea',
         'Black tea',
