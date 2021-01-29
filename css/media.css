@@ -1845,18 +1845,18 @@
         font-size: 1.59rem;
     }
 
-    #info_ban .info_ban_text span {
+    #info_ban .info_ban_text p {
         font-size: 1.4rem;
     }
 
     /* 모바일 버전 */
-    .info_ban_line::after {
-        content: "";
-        position: absolute;
-        top: 185%;
+    .info_ban_line {
+        position: relative;
+        display: block;
         left: 50%;
         width: 1px;
         height: 100px;
+        margin-top: 10%;
         background-color: #fff;
     }
 
@@ -1894,10 +1894,11 @@
         display: none;
     }
 
-    .go_btn {
+    .info_greetings_wrap .go_btn {
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 50px;
         background-color: rgba(255, 255, 255, 0.8);
+        margin: 15% auto 0;
     }
 
     .info_greetings_box .go_btn a {
@@ -2440,7 +2441,9 @@
     }
 
     /*************** info page ****************/
-
+    .info_greetings_wrap .go_btn {
+        margin: 15% auto 5%;
+    }
 
     .info_greetings_wrap .info_greetings_box {
         bottom: -14%;
