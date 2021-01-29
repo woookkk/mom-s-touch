@@ -2442,10 +2442,6 @@
     /*************** info page ****************/
 
 
-    #info_wrap #info_ban {
-        height: 130vh;
-    }
-
     .info_greetings_wrap .info_greetings_box {
         bottom: -14%;
     }
@@ -2455,7 +2451,7 @@
     }
 
     .info_greetings_wrap .info_greetings_box {
-        bottom: -25%;
+        bottom: -15%;
     }
 
     .info_greetings_wrap .info_icon_list li h3 {
